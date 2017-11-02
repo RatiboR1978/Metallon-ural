@@ -1,0 +1,37 @@
+body {
+  position: relative;
+  font-family: PTSans-Regular, Arial, sans-serif;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1420px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

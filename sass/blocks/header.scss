@@ -1,0 +1,67 @@
+.header {
+  padding: 28px 0 30px;
+  border-bottom: 12px solid #3c3c3b;
+}
+
+.header__wrap {
+  display: flex;
+}
+
+.header_menu {
+  font-family: PTSansCaptionBold, Arial, sans-serif;
+  font-size: 24px;
+  margin-top: 10px;
+  height: 31px;
+  a {
+    margin-left: 10px;
+    color: black;
+    padding: 0 16px;
+  }
+  a:hover {
+    border: 3px solid #9a3335;
+    border-radius: 10px;
+    padding: 0 13px;
+  }
+}
+
+.header__logo {
+  margin-right: 33px;
+}
+
+.header__contacts {
+  margin-left: 134px;
+  margin-right: 65px;
+}
+
+.header__phone {
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+.header__phone-text {
+  font-size: 14px;
+  text-align: right;
+  margin: 0;
+}
+
+.header__email {
+  margin-right: 25px;
+  width: 56px;
+  height: 46px;
+  background: url("../img/buttons/mail.png") 0 0 no-repeat;
+}
+
+.header__email:active {
+  background: url("../img/buttons/mail.png") -55px 0 no-repeat;
+}
+
+.header__order {
+  width: 211px;
+  height: 46px;
+  background: url("../img/buttons/phone.png") 0 0 no-repeat;
+}
+
+.header__order:active {
+  background: url("../img/buttons/phone.png") -211px 0 no-repeat;
+}
