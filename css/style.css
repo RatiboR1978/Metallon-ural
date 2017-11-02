@@ -397,8 +397,8 @@ textarea {
   font-style: normal; }
 
 @font-face {
-  font-family: 'pt-serif-caption';
-  src: url("../fonts/PTZ55F.woff") format("woff");
+  font-family: 'PtSerifCaption';
+  src: url("../fonts/PTSerifCaption.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -711,3 +711,31 @@ button {
 
 .slider {
   border-bottom: 12px solid #9a3335; }
+
+.equipment-selection {
+  background: url("../img/bgEquipment.jpg") no-repeat;
+  background-size: cover;
+  border-bottom: 12px solid #9a3335; }
+
+.equipment-selection__wrap {
+  padding: 105px 0 78px; }
+  .equipment-selection__wrap h2 {
+    font-family: PTSansCaptionBold, Arial, sans-serif;
+    font-size: 55px;
+    text-transform: uppercase;
+    margin-bottom: 50px; }
+  .equipment-selection__wrap p {
+    font-family: PtSerifCaption, Arial, sans-serif;
+    font-size: 28px;
+    width: 752px;
+    margin-bottom: 50px; }
+    .equipment-selection__wrap p span {
+      color: #9a3335; }
+
+.equipment-selection__button {
+  width: 301px;
+  height: 76px;
+  background: url("../img/buttons/choose.png") 0 0 no-repeat; }
+
+.equipment-selection__button:active {
+  background: url("../img/buttons/choose.png") -301px 0 no-repeat; }
