@@ -771,11 +771,10 @@ h3 {
   background-color: #9a3335;
   color: white; }
 
-.catalog__item1 {
-  display: none; }
-
 .catalog__item1 h2,
-.catalog__item2 h2 {
+.catalog__item2 h2,
+.catalog__item3 h2,
+.catalog__item4 h2 {
   margin-bottom: 30px; }
 
 .catalog__item1-description {
@@ -792,8 +791,16 @@ h3 {
   margin-bottom: 50px;
   line-height: 38px; }
 
+.catalog__item3-description {
+  font-family: PtSerifCaption, Arial, sans-serif;
+  font-size: 28px;
+  width: 1398px;
+  margin-bottom: 50px;
+  line-height: 38px; }
+
 .catalog__item1-images,
-.catalog__item2-images {
+.catalog__item2-images,
+.catalog__item4-images {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -804,12 +811,23 @@ h3 {
           justify-content: space-between;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+  -webkit-align-content: space-around;
+      -ms-flex-line-pack: distribute;
+          align-content: space-around; }
 
 .catalog__item1-image,
-.catalog__item2-image {
+.catalog__item2-image,
+.catalog__item4-image {
   border: 1px solid black;
   padding: 120px 30px 40px 30px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  position: relative; }
+
+.catalog__item3-image {
+  border: 1px solid black;
+  padding: 0 30px 20px 30px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   position: relative; }
@@ -818,7 +836,12 @@ h3 {
 .catalog__item1-image:nth-child(2),
 .catalog__item2-image:first-child,
 .catalog__item2-image:nth-child(2),
-.catalog__item2-image:nth-child(3) {
+.catalog__item2-image:nth-child(3),
+.catalog__item4-image:nth-child(1),
+.catalog__item4-image:nth-child(3),
+.catalog__item4-image:nth-child(4),
+.catalog__item4-image:nth-child(5),
+.catalog__item4-image:nth-child(2) {
   margin-bottom: 30px; }
 
 .catalog__item1-text,
@@ -854,3 +877,32 @@ h3 {
 
 .catalog__title-narrow {
   width: 267px; }
+
+.catalog__item3-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.catalog__item3-block1 {
+  margin-right: 20px; }
+
+.catalog__item3-block2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.catalog__item3-image1 {
+  margin-bottom: 20px; }
+
+.catalog__item3-image3 {
+  margin-right: 20px;
+  padding-top: 70px; }
+
+.catalog__item3-image4 {
+  padding-top: 55px; }
