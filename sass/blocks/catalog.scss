@@ -1,0 +1,121 @@
+.catalog {
+  padding-bottom: 85px;
+}
+
+.catalog__menu {
+  padding: 20px 0;
+}
+
+.catalog__menu-wrap {
+  background-color: #c6c6c7;
+}
+
+.catalog__menu-item {
+  font-family: PTSansCaptionBold, Arial, sans-serif;
+  font-size: 24px;
+  color: black;
+  padding: 18px 20px;
+  margin-right: -5px;
+}
+
+.catalog__menu-item:hover {
+  background-color: #9a3335;
+  color: white;
+}
+
+.catalog__menu-item--active {
+  background-color: #9a3335;
+  color: white;
+}
+
+.catalog__item1 {
+  display: none;
+}
+
+.catalog__item1,
+.catalog__item2 {
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__item1-description {
+  font-family: PtSerifCaption, Arial, sans-serif;
+  font-size: 28px;
+  width: 938px;
+  margin-bottom: 50px;
+  line-height: 38px;
+}
+
+.catalog__item2-description {
+  font-family: PtSerifCaption, Arial, sans-serif;
+  font-size: 28px;
+  width: 1329px;
+  margin-bottom: 50px;
+  line-height: 38px;
+}
+
+.catalog__item1-images,
+.catalog__item2-images{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog__item1-image,
+.catalog__item2-image {
+  border: 1px solid black;
+  padding: 120px 30px 40px 30px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.catalog__item1-image:first-child,
+.catalog__item1-image:nth-child(2),
+.catalog__item2-image:first-child,
+.catalog__item2-image:nth-child(2),
+.catalog__item2-image:nth-child(3){
+  margin-bottom: 30px;
+}
+
+.catalog__item1-text,
+.catalog__item2-text{
+  position: absolute;
+  top: 0;
+}
+
+.catalog__title {
+  width: 366px;
+}
+
+.catalog__item1-priceNarrow {
+  width: 267px;
+}
+
+.catalog__item1-button {
+  width: 146px;
+  height: 46px;
+  background: url("../img/buttons/buy.png") 0 0 no-repeat;
+}
+
+.catalog__item1-button:active {
+  background: url("../img/buttons/buy.png") -146px 0 no-repeat;
+}
+
+.catalog__item1-priceYes {
+  font-family: PTSansCaptionBold, Arial, sans-serif;
+  font-size: 55px;
+  margin: 0 0 10px;
+  color: #9a3335;
+}
+
+.catalog__item1-priceNo {
+  font-family: PTSans-BoldItalic, Arial, sans-serif;
+  font-size: 24px;
+  margin: 0 0 20px;
+  width: 366px;
+}
+
+.catalog__title-narrow {
+  width: 267px;
+}
