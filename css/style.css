@@ -417,11 +417,10 @@ a {
   text-decoration: none; }
 
 .container {
-  width: 1420px;
+  width: 1280px;
   margin: 0 auto; }
 
 img {
-  max-width: 100%;
   height: auto;
   outline: none; }
 
@@ -447,7 +446,7 @@ button {
 
 h2 {
   font-family: PTSansCaptionBold, Arial, sans-serif;
-  font-size: 55px;
+  font-size: 50px;
   text-transform: uppercase;
   margin-bottom: 50px; }
 
@@ -673,11 +672,10 @@ h3 {
 
 .header_menu {
   font-family: PTSansCaptionBold, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 10px;
   height: 31px; }
   .header_menu a {
-    margin-left: 10px;
     color: black;
     padding: 0 16px; }
   .header_menu a:hover {
@@ -687,19 +685,19 @@ h3 {
     padding: 0 13px; }
 
 .header__logo {
-  margin-right: 33px; }
+  margin-right: 30px; }
 
 .header__contacts {
-  margin-left: 134px;
-  margin-right: 65px; }
+  margin-left: 113px;
+  margin-right: 48px; }
 
 .header__phone {
   font-family: PTSans-Bold, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   margin: 0; }
 
 .header__phone-text {
-  font-size: 14px;
+  font-size: 13px;
   text-align: right;
   margin: 0; }
 
@@ -729,7 +727,7 @@ h3 {
   border-bottom: 12px solid #9a3335; }
 
 .equipment-selection__wrap {
-  padding: 105px 0 78px; }
+  padding: 90px 0 70px; }
   .equipment-selection__wrap p {
     font-family: PtSerifCaption, Arial, sans-serif;
     font-size: 28px;
@@ -751,16 +749,16 @@ h3 {
   padding-bottom: 85px; }
 
 .catalog__menu {
-  padding: 20px 0; }
+  padding: 13px 0; }
 
 .catalog__menu-wrap {
   background-color: #c6c6c7; }
 
 .catalog__menu-item {
   font-family: PTSansCaptionBold, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   color: black;
-  padding: 18px 20px;
+  padding: 12px 20px;
   margin-right: -5px; }
 
 .catalog__menu-item:hover {
@@ -775,26 +773,26 @@ h3 {
 .catalog__item2 h2,
 .catalog__item3 h2,
 .catalog__item4 h2 {
-  margin-bottom: 30px; }
+  margin-bottom: 27px; }
 
 .catalog__item1-description {
   font-family: PtSerifCaption, Arial, sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   width: 938px;
   margin-bottom: 50px;
   line-height: 38px; }
 
 .catalog__item2-description {
   font-family: PtSerifCaption, Arial, sans-serif;
-  font-size: 28px;
-  width: 1329px;
+  font-size: 25px;
+  width: 1270px;
   margin-bottom: 50px;
   line-height: 38px; }
 
 .catalog__item3-description {
   font-family: PtSerifCaption, Arial, sans-serif;
-  font-size: 28px;
-  width: 1398px;
+  font-size: 25px;
+  width: 1270px;
   margin-bottom: 50px;
   line-height: 38px; }
 
@@ -815,12 +813,16 @@ h3 {
   -webkit-align-content: space-around;
       -ms-flex-line-pack: distribute;
           align-content: space-around; }
+  .catalog__item1-images img,
+  .catalog__item2-images img,
+  .catalog__item4-images img {
+    width: 90%; }
 
 .catalog__item1-image,
 .catalog__item2-image,
 .catalog__item4-image {
   border: 1px solid black;
-  padding: 120px 30px 40px 30px;
+  padding: 120px 0 40px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   position: relative; }
@@ -831,6 +833,8 @@ h3 {
   -webkit-border-radius: 10px;
           border-radius: 10px;
   position: relative; }
+  .catalog__item3-image img {
+    width: 90%; }
 
 .catalog__item1-image:first-child,
 .catalog__item1-image:nth-child(2),

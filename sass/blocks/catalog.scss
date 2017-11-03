@@ -3,7 +3,7 @@
 }
 
 .catalog__menu {
-  padding: 20px 0;
+  padding: 13px 0;
 }
 
 .catalog__menu-wrap {
@@ -12,9 +12,9 @@
 
 .catalog__menu-item {
   font-family: PTSansCaptionBold, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   color: black;
-  padding: 18px 20px;
+  padding: 12px 20px;
   margin-right: -5px;
 }
 
@@ -38,13 +38,13 @@
 .catalog__item3,
 .catalog__item4 {
   h2 {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 }
 
 .catalog__item1-description {
   font-family: PtSerifCaption, Arial, sans-serif;
-  font-size: 28px;
+  font-size: 25px;
   width: 938px;
   margin-bottom: 50px;
   line-height: 38px;
@@ -52,16 +52,16 @@
 
 .catalog__item2-description {
   font-family: PtSerifCaption, Arial, sans-serif;
-  font-size: 28px;
-  width: 1329px;
+  font-size: 25px;
+  width: 1270px;
   margin-bottom: 50px;
   line-height: 38px;
 }
 
 .catalog__item3-description {
   font-family: PtSerifCaption, Arial, sans-serif;
-  font-size: 28px;
-  width: 1398px;
+  font-size: 25px;
+  width: 1270px;
   margin-bottom: 50px;
   line-height: 38px;
 }
@@ -73,13 +73,16 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: space-around;
+  img {
+    width: 90%;
+  }
 }
 
 .catalog__item1-image,
 .catalog__item2-image,
 .catalog__item4-image {
   border: 1px solid black;
-  padding: 120px 30px 40px 30px;
+  padding: 120px 0 40px;
   border-radius: 10px;
   position: relative;
 }
@@ -89,6 +92,9 @@
   padding: 0 30px 20px 30px;
   border-radius: 10px;
   position: relative;
+  img {
+    width: 90%;
+  }
 }
 
 .catalog__item1-image:first-child,
