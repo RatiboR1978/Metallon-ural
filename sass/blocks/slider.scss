@@ -1,3 +1,5 @@
 .slider {
-  border-bottom: 12px solid #9a3335;
+  @media (min-width: 1280px) {
+    border-bottom: 12px solid #9a3335;
+  }
 }

@@ -1,11 +1,13 @@
 .equipment-selection {
-  background: url("../img/bgEquipment.jpg") no-repeat;
-  background-size: cover;
   border-bottom: 12px solid #9a3335;
+  @media (min-width: 1280px) {
+    background: url("../img/bgEquipment.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 .equipment-selection__wrap {
-  padding: 90px 0 70px;
+  padding: 16px 0 47px;
   p {
     font-family: PtSerifCaption, Arial, sans-serif;
     font-size: 28px;
@@ -15,6 +17,29 @@
     span {
       color: #9a3335
     }
+    @media (max-width: 1280px) {
+      font-size: 10px;
+      width: 280px;
+      margin-bottom: 17px;
+      line-height: 12px;
+    }
+  }
+  @media (min-width: 1280px) {
+    padding: 90px 0 70px;
+  }
+}
+
+.equipment-selection__button-mob {
+  width: 239px;
+  height: 39px;
+  border-radius: 2px;
+  background-color: #9a3335;
+  text-transform: uppercase;
+  color: white;
+  font-family: PTSansCaptionBold, Arial, sans-serif;
+  font-size: 20px;
+  @media (min-width: 1280px) {
+    display: none;
   }
 }
 
@@ -22,8 +47,19 @@
   width: 301px;
   height: 76px;
   background: url("../img/buttons/choose.png") 0 0 no-repeat;
+  display: none;
+  @media (min-width: 1280px) {
+    display: block;
+  }
 }
 
 .equipment-selection__button:active {
   background: url("../img/buttons/choose.png") -301px 0 no-repeat;
+}
+
+.equipment-selection__title {
+  @media (max-width: 1280px) {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }

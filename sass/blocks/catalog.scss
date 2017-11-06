@@ -6,8 +6,56 @@
   padding: 13px 0;
 }
 
+.catalog__container-mob {
+  background-color: #c6c6c7;
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.catalog__menu-wrap-mob {
+  font-size: 20px;
+  height: 30px;
+  width: 280px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.catalog__list {
+  height: 49px;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: #c6c6c7;
+}
+
+.catalog__list-item {
+  display: inline-block;
+  font-family: PTSansCaptionBold, Arial, sans-serif;
+  font-size: 13px;
+  height: 22px;
+  padding: 7px 5px;
+  margin-right: -5px;
+}
+
+.catalog__list-item:hover {
+  background-color: #9a3335;
+  color: white;
+}
+
+.catalog__list-item--active {
+  background-color: #9a3335;
+  color: white;
+}
+
 .catalog__menu-wrap {
   background-color: #c6c6c7;
+  display: none;
+  @media (min-width: 1280px) {
+    display: block;
+  }
 }
 
 .catalog__menu-item {

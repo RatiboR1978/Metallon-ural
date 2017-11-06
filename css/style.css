@@ -780,7 +780,7 @@ h3 {
   height: 10px;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  background-color: #c43235;
+  background-color: #9a3335;
   color: white;
   margin-top: 5px; }
 
@@ -795,16 +795,19 @@ h3 {
   .header-mob_menu a:last-child {
     margin-right: 0; }
 
-.slider {
-  border-bottom: 12px solid #9a3335; }
+@media (min-width: 1280px) {
+  .slider {
+    border-bottom: 12px solid #9a3335; } }
 
 .equipment-selection {
-  background: url("../img/bgEquipment.jpg") no-repeat;
-  background-size: cover;
   border-bottom: 12px solid #9a3335; }
+  @media (min-width: 1280px) {
+    .equipment-selection {
+      background: url("../img/bgEquipment.jpg") no-repeat;
+      background-size: cover; } }
 
 .equipment-selection__wrap {
-  padding: 90px 0 70px; }
+  padding: 16px 0 47px; }
   .equipment-selection__wrap p {
     font-family: PtSerifCaption, Arial, sans-serif;
     font-size: 28px;
@@ -813,14 +816,46 @@ h3 {
     line-height: 41px; }
     .equipment-selection__wrap p span {
       color: #9a3335; }
+    @media (max-width: 1280px) {
+      .equipment-selection__wrap p {
+        font-size: 10px;
+        width: 280px;
+        margin-bottom: 17px;
+        line-height: 12px; } }
+  @media (min-width: 1280px) {
+    .equipment-selection__wrap {
+      padding: 90px 0 70px; } }
+
+.equipment-selection__button-mob {
+  width: 239px;
+  height: 39px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-color: #9a3335;
+  text-transform: uppercase;
+  color: white;
+  font-family: PTSansCaptionBold, Arial, sans-serif;
+  font-size: 20px; }
+  @media (min-width: 1280px) {
+    .equipment-selection__button-mob {
+      display: none; } }
 
 .equipment-selection__button {
   width: 301px;
   height: 76px;
-  background: url("../img/buttons/choose.png") 0 0 no-repeat; }
+  background: url("../img/buttons/choose.png") 0 0 no-repeat;
+  display: none; }
+  @media (min-width: 1280px) {
+    .equipment-selection__button {
+      display: block; } }
 
 .equipment-selection__button:active {
   background: url("../img/buttons/choose.png") -301px 0 no-repeat; }
+
+@media (max-width: 1280px) {
+  .equipment-selection__title {
+    font-size: 14px;
+    margin-bottom: 10px; } }
 
 .catalog {
   padding-bottom: 85px; }
@@ -828,8 +863,50 @@ h3 {
 .catalog__menu {
   padding: 13px 0; }
 
-.catalog__menu-wrap {
+.catalog__container-mob {
   background-color: #c6c6c7; }
+  @media (min-width: 1280px) {
+    .catalog__container-mob {
+      display: none; } }
+
+.catalog__menu-wrap-mob {
+  font-size: 20px;
+  height: 30px;
+  width: 280px;
+  background: #fff;
+  overflow: hidden; }
+
+.catalog__list {
+  height: 49px;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  background-color: #c6c6c7; }
+
+.catalog__list-item {
+  display: inline-block;
+  font-family: PTSansCaptionBold, Arial, sans-serif;
+  font-size: 13px;
+  height: 22px;
+  padding: 7px 5px;
+  margin-right: -5px; }
+
+.catalog__list-item:hover {
+  background-color: #9a3335;
+  color: white; }
+
+.catalog__list-item--active {
+  background-color: #9a3335;
+  color: white; }
+
+.catalog__menu-wrap {
+  background-color: #c6c6c7;
+  display: none; }
+  @media (min-width: 1280px) {
+    .catalog__menu-wrap {
+      display: block; } }
 
 .catalog__menu-item {
   font-family: PTSansCaptionBold, Arial, sans-serif;
