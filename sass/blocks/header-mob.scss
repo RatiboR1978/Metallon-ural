@@ -1,0 +1,68 @@
+.header-mob {
+  position: relative;
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.header-mob:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  top: 35px;
+}
+
+.header-mob__wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
+
+.header-mob__block-contacts {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.header-mob__phone {
+  font-size: 8px;
+  margin: 3px 10px 0 0;
+  font-family: PTSansCaptionBold, Arial, sans-serif;
+}
+
+.header-mob__phone-text {
+  font-size: 4px;
+  text-align: right;
+  margin: 0 10px 0 0;
+}
+
+.header-mob__logo {
+  margin-right: 55px;
+}
+
+.header-mob__order {
+  font-family: PTSansCaptionBold, Arial, sans-serif;
+  width: 65px;
+  font-size: 7.5px;
+  padding: 0;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #c43235;
+  color: white;
+  margin-top: 5px;
+}
+
+.header-mob_menu {
+  margin-bottom: 10px;
+  line-height: 12px;
+  a {
+    font-family: PTSansCaptionBold, Arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    margin-right: 51px;
+  }
+  a:last-child {
+    margin-right: 0;
+  }
+}

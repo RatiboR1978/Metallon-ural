@@ -1,6 +1,10 @@
 .header {
   padding: 28px 0 30px;
   border-bottom: 12px solid #3c3c3b;
+  display: none;
+  @media (min-width: 1280px) {
+    display: block;
+  }
 }
 
 .header__wrap {

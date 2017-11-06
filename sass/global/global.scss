@@ -9,11 +9,15 @@ a {
 }
 
 .container {
-  width: 1280px;
   margin: 0 auto;
+  width: 280px;
+  @media (min-width: 1280px) {
+    width: 1280px;
+  }
 }
 
 img {
+  max-width: 100%;
   height: auto;
   outline: none;
 }
