@@ -1286,7 +1286,7 @@ h3 {
 
 .slider-logos__item {
   border: 1px solid red;
-  margin: 0 -2px;
+  margin: 0 -2px 1px;
   -webkit-border-radius: 10px;
           border-radius: 10px; }
 
