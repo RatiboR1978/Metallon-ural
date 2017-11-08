@@ -1,7 +1,10 @@
 body {
   position: relative;
   font-family: PTSans-Regular, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 8px;
+  @media (min-width: 1280px) {
+    font-size: 20px;
+  }
 }
 
 a {
@@ -42,13 +45,21 @@ button {
 
 h2 {
   font-family: PTSansCaptionBold, Arial, sans-serif;
-  font-size: 50px;
+  font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  @media (min-width: 1280px) {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 h3 {
   font-family: PTSansCaptionBold, Arial, sans-serif;
-  font-size: 24px;
+  font-size: 8px;
   margin-bottom: 0;
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
 }
