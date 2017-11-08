@@ -1,0 +1,29 @@
+.slider-logos {
+  span {
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 10px;
+  }
+  p {
+    line-height: 13px;
+  }
+}
+
+.slider-logos__title {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.slider-logos__img div{
+  margin: 0 3px;
+}
+
+
+.slider-logos__item {
+  border: 1px solid red;
+  margin: 0 -2px;
+  border-radius: 10px;
+}
+
+.slider-logos__text {
+  margin-top: 25px;
+}

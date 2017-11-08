@@ -1264,4 +1264,31 @@ h3 {
   background-size: cover;
   color: white;
   text-align: center;
-  padding: 30px 0 39px; }
+  padding: 30px 0 1px; }
+  .advantages h2 {
+    margin-bottom: 25px; }
+  .advantages p {
+    margin-bottom: 25px; }
+
+.slider-logos span {
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 10px; }
+
+.slider-logos p {
+  line-height: 13px; }
+
+.slider-logos__title {
+  text-align: center;
+  margin: 25px 0; }
+
+.slider-logos__img div {
+  margin: 0 3px; }
+
+.slider-logos__item {
+  border: 1px solid red;
+  margin: 0 -2px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+.slider-logos__text {
+  margin-top: 25px; }
