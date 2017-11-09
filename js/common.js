@@ -68,6 +68,9 @@ $(function () {
         },500)
     });
 
+    $('select').styler();
+    $('.placeholder').html('')
+
 
 
 
@@ -96,6 +99,7 @@ function init(){
     myMap.controls.remove('fullscreenControl');
 
     myMap.behaviors.disable([
+        'drag',
         'scrollZoom'
     ]);
 

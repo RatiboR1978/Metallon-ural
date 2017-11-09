@@ -3,9 +3,36 @@
   h2 {
     text-align: center;
   }
+  label {
+    display: block;
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 12px;
+  }
 }
 
 .order2__step {
   font-size: 12px;
   text-align: center;
+}
+
+.order2_select {
+  outline: none;
+  width: 280px;
+}
+
+.order2__clarification {
+  font-size: 7px;
+  margin: 0;
+}
+
+.order2__wrap {
+  margin-bottom: 0;
+}
+
+.order2__submit {
+  width: 29px;
+  height: 23px;
+  background-image: url(../img/bt-mb.png);
+  background-size: cover;
+  font-size: 0;
 }

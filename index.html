@@ -668,18 +668,20 @@
       <h2>Заказать оборудование</h2>
       <p class="order2__step">Шаг 2 из 2</p>
       <form>
-        <p>
-          <label for="check1">Ваше имя</label><br>
-          <select name="nubexSelect" size="3" multiple form="nubexForm">
-            <option>Электроник</option>
-            <option>Сыроежкин</option>
-            <option>Чижиков</option>
-            <option>Кукушкина</option>
+        <p class="order2__wrap">
+          <label for="check1">Модель сварачного аппарат</label><br>
+          <select class="order2_select">
+            <option>Merkle LiteARC 180</option>
+            <option>AOTAI ARC 200</option>
+            <option>PICO 160 CEL PULS EWM</option>
+            <option>ACTIV TIG 227 MV/PFC DC/</option>
+            <option>TECH ARC 205 B (Z203)</option>
           </select>
+          <p class="order2__clarification">Если вы пока не выбрали модель, оставьте это поле пустым</p>
         </p>
         <p>
           <label for="check2">Телефон</label><br>
-          <input class="order1__input" type="text" id="check2">
+          <input class="order2__submit" type="submit" id="check2">
         </p>
         <p>
           <label for="check3">Электронная почта</label><br>
