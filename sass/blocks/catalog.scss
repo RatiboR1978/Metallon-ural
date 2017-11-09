@@ -33,6 +33,7 @@
   overflow-x: scroll;
   overflow-y: hidden;
   background-color: #c6c6c7;
+  cursor: pointer;
 }
 
 .catalog__list-item {
@@ -135,6 +136,7 @@
   padding: 10px 0 70px;
   border-radius: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 .catalog__item3-image {
@@ -142,6 +144,7 @@
   padding: 10px 0 70px 0;
   border-radius: 10px;
   position: relative;
+  cursor: pointer;
   @media (min-width: 1280px) {
     padding: 0 30px 20px 30px;
   }
@@ -152,6 +155,14 @@
 .catalog__item3-image,
 .catalog__item4-image {
   margin-bottom: 15px;
+}
+
+.catalog__item1-image:hover,
+.catalog__item2-image:hover,
+.catalog__item3-image:hover,
+.catalog__item4-image:hover {
+  margin: -2px -2px 13px -2px;
+  border: 3px solid #9a3335;
 }
 
 .catalog__item1-image:first-child,
@@ -215,7 +226,7 @@
 .catalog__item1-price-yes {
   font-family: PTSansCaptionBold, Arial, sans-serif;
   font-size: 22px;
-  margin: 2px 0 -8px;
+  margin: 2px 0 0;
   color: #9a3335;
   @media (min-width: 1280px) {
     font-size: 55px;
@@ -227,7 +238,7 @@
 .catalog__item1-price-no {
   font-family: PTSans-BoldItalic, Arial, sans-serif;
   font-size: 8px;
-  margin: 0 0 10px;
+  margin: 0 0 18px;
   @media (min-width: 1280px) {
     font-size: 24px;
     margin: 0 0 20px;
@@ -236,7 +247,7 @@
 }
 
 .catalog__item-price-big {
-  margin-bottom: 0;
+  margin-bottom: 9px;
 }
 
 .catalog__title-narrow {
@@ -324,3 +335,10 @@
   background: url("../img/catalog/burner/burner-mob.jpg") no-repeat;
 }
 
+.catalog__item {
+  display: none;
+}
+
+.catalog__item--active {
+  display: block;
+}

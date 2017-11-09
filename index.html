@@ -23,9 +23,9 @@
         <button class="header-mob__order">Заказать звонок</button>
       </div>
       <nav class="header-mob_menu">
-        <a href="#">Каталог</a>
-        <a href="#">Компания</a>
-        <a href="#">Контакты</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#company">Компания</a>
+        <a href="#contacts">Контакты</a>
       </nav>
     </div>
   </div>
@@ -71,18 +71,18 @@
       </div>
     </div>
   </section>
-  <section class="catalog">
+  <section class="catalog" id="catalog">
     <div class="catalog__container-mob">
       <div class="container">
-        <div class="catalog__menu-wrap-mob">
+        <div class="catalog__menu-wrap-mob" id="wr-tabs">
           <ul class="catalog__list">
-            <li class="catalog__list-item catalog__list-item--active">MMA</li>
-            <li class="catalog__list-item">MIG/MAG</li>
-            <li class="catalog__list-item">TIG</li>
-            <li class="catalog__list-item">Контактная и шовная</li>
-            <li class="catalog__list-item">Автоматическая</li>
-            <li class="catalog__list-item">Расходные материалы</li>
-            <li class="catalog__list-item">Горелки</li>
+            <li class="catalog__list-item catalog__list-item--active tab">MMA</li>
+            <li class="catalog__list-item tab">MIG/MAG</li>
+            <li class="catalog__list-item tab">TIG</li>
+            <li class="catalog__list-item tab">Контактная и шовная</li>
+            <li class="catalog__list-item tab">Автоматическая</li>
+            <li class="catalog__list-item tab">Расходные материалы</li>
+            <li class="catalog__list-item tab">Горелки</li>
           </ul>
         </div>
       </div>
@@ -101,7 +101,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="catalog__item1">
+      <div class="catalog__item1 tab-cont catalog__item catalog__item--active">
         <h2>Mма сварка</h2>
         <p class="catalog__item1-description">Ручная дуговая сварка штучными электродами с покрытием.
           Применяется для сварки углеродистых и нержавеющих сталей.</p>
@@ -164,7 +164,7 @@
           </div>
         </div>
       </div>
-      <div class="catalog__item2">
+      <div class="catalog__item2 catalog__item tab-cont">
         <h2>MIG/MAG сварка</h2>
         <p class="catalog__item2-description">Полуавтоматическая сварка электродной проволокой в среде защитного газа - инертного
           (аргона) или активного (углекислого газа). Применяется для сварки сталей
@@ -239,7 +239,7 @@
           </div>
         </div>
       </div>
-      <div class="catalog__item3">
+      <div class="catalog__item3 catalog__item tab-cont">
         <h2>TIG СВАРКА</h2>
         <p class="catalog__item3-description">Ручная сварка неплавящимися вольфрамовыми электродами в среде защитного газа - аргона.
           Метод TIG на постоянном токе (TIG-DC) применяют для сталей, метод TIG
@@ -298,7 +298,7 @@
           </div>
         </div>
         </div>
-      <div class="catalog__item4">
+      <div class="catalog__item4 catalog__item tab-cont">
         <h2>КОНТАКТНАЯ И ШОВНАЯ СВАРКА</h2>
         <p class="catalog__item2-description">Cварочный процесс, при котором детали соединяются швом, состоящим из ряда
           отдельных сварных точек (литых зон), частично перекрывающих одна другую
@@ -394,7 +394,7 @@
           </div>
         </div>
       </div>
-      <div class="catalog__item3">
+      <div class="catalog__item3 catalog__item tab-cont">
         <h2>АВТОМАТИЧЕСКАЯ СВАРКА</h2>
         <p class="catalog__item3-description">Cварка электрической дугой, горящей между концом сварочной проволоки и свариваемым
           металлом под слоем флюса. Применяется в стационарных цеховых условиях для всех
@@ -450,7 +450,7 @@
           </div>
         </div>
       </div>
-      <div class="catalog__item5">
+      <div class="catalog__item5 catalog__item tab-cont">
         <h2>расходные материалы</h2>
         <p class="catalog__item3-description">Все расходные материалы в наличии.</p>
         <ul class="catalog__item5-list">
@@ -466,13 +466,13 @@
         </ul>
         <button class="catalog__item5-button">Купить</button>
       </div>
-      <div class="catalog__item6">
+      <div class="catalog__item6 catalog__item tab-cont">
         <h2>Горелки</h2>
         <button class="catalog__item6-button">Купить</button>
       </div>
     </div>
   </section>
-  <section class="about">
+  <section class="about" id="company">
     <div class="container">
       <h2 class="about__title">«Металлон Урал»</h2>
       <p class="about__text">Помогаем сократить операционные расходы, засчет того, что наши клиенты могут купить все в одном месте.</p>
@@ -612,7 +612,86 @@
       </div>
     </div>
   </section>
+  <section class="map" id="contacts">
+    <div class="map__text">
+      <div class="container">
+        <h2 class="map__title">КОНТАКТЫ</h2>
+        <p class="map__section">ООО «Металлон Урал»:</p>
+        <p class="map__section-text">8 (800) 775-09-84</p>
+        <p class="map__clarification">Звонок по РФ бесплатный</p>
+        <p class="map__section">Электронный адрес:</p>
+        <p class="map__section-text map__section-margin">svarka@metallon-group.ru</p>
+        <p class="map__section">Адрес головного офиса:</p>
+        <p class="map__section-text map__section-margin">г. Екатеринбург, ул. Маяковского,д. 25, корпус А, БЦ «Основа», 9 этаж</p>
+        <p class="map__section">Часы работы:</p>
+        <p class="map__section-text">ПН-ПТ с 900 до 1800</p>
+      </div>
+    </div>
+    <div class="map__area" id="map"></div>
+  </section>
+  <section class="question">
+    <div class="container">
+      <form>
+        <h3>ЗАДАТЬ ВОПРОС</h3>
+        <p class="question__name"><label for="check1">Ваше имя</label><br><input class="question__input" type="text" id="check1"></p>
+        <p><label for="check2">Телефон</label><br><input class="question__input" type="text" id="check2"></p>
+        <input class="question__button" type="button" value="ЗАКАЗАТЬ ЗВОНОК">
+      </form>
+    </div>
+  </section>
+  <div class="order1">
+    <div class="container">
+      <h2>Заказать оборудование</h2>
+      <p class="order1__step">Шаг 1 из 2</p>
+      <p class="order1__communications">Оставте вашу заявку и наш менеджер свяжется с вами.</p>
+      <p class="order1__regulations">Если вы не нашли необходимое вам оборудование, просто напишите об этом в коментарии к заявке и мы обязательно найдем, то что вам необходимо, либо предложим самую подходящую альтернативу из нашего ассортимента.</p>
+      <p class="order1__regulations order1__red">Если наш менеджер не перезвонит Вам в течение 10 минут – дополнительная скидка 5% на всю линейку сварочного оборудования!</p>
+      <form>
+        <p>
+          <label for="check1">Ваше имя</label><br>
+          <input class="order1__input" type="text" id="check1">
+        </p>
+        <p>
+          <label for="check2">Телефон</label><br>
+          <input class="order1__input" type="text" id="check2">
+        </p>
+        <p>
+          <label for="check3">Электронная почта</label><br>
+          <input class="order1__input" type="text" id="check3">
+        </p>
+        <input class="order1__button" type="button" value="ДАЛЕЕ">
+      </form>
+    </div>
+  </div>
+  <div class="order2">
+    <div class="container">
+      <h2>Заказать оборудование</h2>
+      <p class="order2__step">Шаг 2 из 2</p>
+      <form>
+        <p>
+          <label for="check1">Ваше имя</label><br>
+          <select name="nubexSelect" size="3" multiple form="nubexForm">
+            <option>Электроник</option>
+            <option>Сыроежкин</option>
+            <option>Чижиков</option>
+            <option>Кукушкина</option>
+          </select>
+        </p>
+        <p>
+          <label for="check2">Телефон</label><br>
+          <input class="order1__input" type="text" id="check2">
+        </p>
+        <p>
+          <label for="check3">Электронная почта</label><br>
+          <input class="order1__input" type="text" id="check3">
+        </p>
+        <input class="order1__button" type="button" value="ДАЛЕЕ">
+      </form>
+
+    </div>
+  </div>
   <script src="js/libs.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

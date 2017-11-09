@@ -1,0 +1,48 @@
+.question {
+  background: url("../img/footerbg.jpg") no-repeat;
+  background-size: cover;
+  margin-top: -8px;
+  padding: 27px 0 40px;
+  color: white;
+  h3 {
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  form {
+    text-align: right;
+    label {
+      font-family: PTSans-Bold, Arial, sans-serif;
+      font-size: 12px;
+      display: block;
+    }
+  }
+}
+
+.question__input {
+  width: 143px;
+  height: 19px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.question__name {
+  margin-bottom: 15px;
+}
+
+.question__button {
+  display: block;
+  margin: 47px auto 0;
+  width: 230px;
+  height: 39px;
+  background-color: #9e3335;
+  border: none;
+  outline: none;
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
