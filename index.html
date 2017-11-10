@@ -20,7 +20,7 @@
           <p class="header-mob__phone">8 (800) 775-09-84</p>
           <p class="header-mob__phone-text">Звонок по РФ бесплатный</p>
         </div>
-        <button class="header-mob__order">Заказать звонок</button>
+        <a href="#question" class="header-mob__order">Заказать звонок</a>
       </div>
       <nav class="header-mob_menu">
         <a href="#catalog">Каталог</a>
@@ -59,7 +59,7 @@
   <section class="equipment-selection">
     <div class="container">
       <div class="equipment-selection__wrap">
-        <h2 class="equipment-selection__title">Сварочное оборудование</h2>
+        <h2>Сварочное оборудование</h2>
         <p>Купите сварочное оборудование любой сложности
           и получите <span>комплект расходных материалов
           на месяц бесплатно.</span></p>
@@ -90,13 +90,13 @@
     <div class="catalog__menu-wrap">
       <div class="container">
         <nav class="catalog__menu">
-          <a href="#" class="catalog__menu-item catalog__menu-item--active">MMA</a>
-          <a href="#" class="catalog__menu-item">MIG/MAG</a>
-          <a href="#" class="catalog__menu-item">TIG</a>
-          <a href="#" class="catalog__menu-item">Контактная и шовная</a>
-          <a href="#" class="catalog__menu-item">Автоматическая</a>
-          <a href="#" class="catalog__menu-item">Расходные материалы</a>
-          <a href="#" class="catalog__menu-item">Горелки</a>
+          <a href="#" class="catalog__menu-item tab-js catalog__menu-item--active">MMA</a>
+          <a href="#" class="catalog__menu-item tab-js">MIG/MAG</a>
+          <a href="#" class="catalog__menu-item tab-js">TIG</a>
+          <a href="#" class="catalog__menu-item tab-js">Контактная и шовная</a>
+          <a href="#" class="catalog__menu-item tab-js">Автоматическая</a>
+          <a href="#" class="catalog__menu-item tab-js">Расходные материалы</a>
+          <a href="#" class="catalog__menu-item tab-js">Горелки</a>
         </nav>
       </div>
     </div>
@@ -106,7 +106,7 @@
         <p class="catalog__item1-description">Ручная дуговая сварка штучными электродами с покрытием.
           Применяется для сварки углеродистых и нержавеющих сталей.</p>
         <div class="catalog__item1-images">
-          <div class="catalog__item1-image">
+          <div class="catalog__item1-image catalog__img-big catalog__item-hover catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/mma/MerkleLiteARC180.jpg">
               <img src="img/catalog/mma/Merkle%20LiteARC%20180-mob%20.jpg" alt="image">
@@ -117,7 +117,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item1-image">
+          <div class="catalog__item1-image catalog__img-big catalog__item-hover catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/mma/AOTAIARC200.jpg">
               <img src="img/catalog/mma/AOTAI%20ARC%20200-mob.jpg" alt="image">
@@ -128,7 +128,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item1-image">
+          <div class="catalog__item1-image catalog__img-small catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/mma/PICO160CELPULSEWM.jpg">
               <img src="img/catalog/mma/PICO%20160%20CEL%20PULS%20EWM-mob.jpg" alt="image">
@@ -139,7 +139,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item1-image">
+          <div class="catalog__item1-image catalog__img-small catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/mma/ACTIVTIG227MVPFCDC.jpg">
               <img src="img/catalog/mma/ACTIV%20TIG%20227%20MV-mob.jpg" alt="image">
@@ -147,11 +147,11 @@
             <div class="catalog__item1-text">
               <h3 class="catalog__title">ACTIV TIG 227 MV/PFC DC/
                 LIFT VRD BLUEWELD</h3>
-              <p class="catalog__item1-price-no catalog__item-price-big">Цену можно узнать по запросу</p>
+              <p class="catalog__item1-price-no catalog__item-price-big catalog__item-js">Цену можно узнать по запросу</p>
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item1-image">
+          <div class="catalog__item1-image catalog__img-small catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/mma/TECHARC205B(Z203).jpg">
               <img src="img/catalog/mma/TECH%20ARC%20205%20B%20(Z203)-mob.jpg" alt="image">
@@ -170,10 +170,10 @@
           (аргона) или активного (углекислого газа). Применяется для сварки сталей
           (в том числе нержавеющих) и алюминиевых сплавов.</p>
         <div class="catalog__item2-images">
-          <div class="catalog__item2-image">
+          <div class="catalog__item2-image catalog__item-hover catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/migMag/MIG-500F.jpg">
-              <img src="img/catalog/migMag/MIG-500F-mob.jpg" alt="image">
+              <img class="catalog__img-big" src="img/catalog/migMag/MIG-500F-mob.jpg" alt="image">
             </picture>
             <div class="catalog__item2-text">
               <h3 class="catalog__title">MIG-500F</h3>
@@ -181,10 +181,10 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item2-image">
+          <div class="catalog__item2-image catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/migMag/AOTAIAMIG500PM.jpg">
-              <img src="img/catalog/migMag/AOTAI%20AMIG%20500PM-mob.jpg" alt="image">
+              <img class="catalog__img-midl" src="img/catalog/migMag/AOTAI%20AMIG%20500PM-mob.jpg" alt="image">
             </picture>
             <div class="catalog__item2-text">
               <h3 class="catalog__title">AOTAI AMIG 500PM</h3>
@@ -192,10 +192,10 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item2-image">
+          <div class="catalog__item2-image catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/migMag/MERKLESPEEDMIG.jpg">
-              <img src="img/catalog/migMag/MERKLE%20SPEEDMIG%20452%20DW-mob.jpg" alt="image">
+              <img class="catalog__img-midl" src="img/catalog/migMag/MERKLE%20SPEEDMIG%20452%20DW-mob.jpg" alt="image">
             </picture>
             <div class="catalog__item2-text">
               <h3 class="catalog__title catalog__title-narrow">MERKLE SPEEDMIG
@@ -204,10 +204,10 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item2-image">
+          <div class="catalog__item2-image catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/migMag/WEGA401EWM.jpg">
-              <img src="img/catalog/migMag/WEGA%20401%20EWM-mob.jpg" alt="image">
+              <img class="catalog__img-small" src="img/catalog/migMag/WEGA%20401%20EWM-mob.jpg" alt="image">
             </picture>
             <div class="catalog__item2-text">
               <h3 class="catalog__title">WEGA 401 EWM</h3>
@@ -215,10 +215,10 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item2-image">
+          <div class="catalog__item2-image catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/migMag/MEGAMIG480BLUEWELD.jpg">
-              <img src="img/catalog/migMag/MEGAMIG%20480%20BLUEWELD-mob.jpg" alt="image">
+              <img class="catalog__img-small" src="img/catalog/migMag/MEGAMIG%20480%20BLUEWELD-mob.jpg" alt="image">
             </picture>
             <div class="catalog__item2-text">
               <h3 class="catalog__title">MEGAMIG 480 BLUEWELD</h3>
@@ -226,10 +226,10 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item2-image">
+          <div class="catalog__item2-image catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/migMag/TECHARC205B(Z203).jpg">
-              <img src="img/catalog/migMag/TECH%20MIG%203500%20(N222)-mob.jpg" alt="image">
+              <img class="catalog__img-small" src="img/catalog/migMag/TECH%20MIG%203500%20(N222)-mob.jpg" alt="image">
             </picture>
             <div class="catalog__item2-text">
               <h3 class="catalog__title">TECH ARC 205 B (Z203)</h3>
@@ -246,7 +246,7 @@
           на переменном токе (TIG-AC) - для алюминиевых сплавов.</p>
         <div class="catalog__item3-wrap">
           <div class="catalog__item3-block1">
-            <div class="catalog__item3-image  catalog__item3-image1">
+            <div class="catalog__item3-image  catalog__item3-image1 catalog__item-js">
               <picture>
                 <source media="(min-width: 1280px)" srcset="img/catalog/tig/MerkleLogiTIG240ACDC.jpg">
                 <img src="img/catalog/tig/Merkle%20LogiTIG%20240%20AC%20DC-mob.jpg" alt="image">
@@ -257,7 +257,7 @@
                 <button class="catalog__item1-button">Купить</button>
               </div>
             </div>
-            <div class="catalog__item3-image">
+            <div class="catalog__item3-image catalog__item-js">
               <picture>
                 <source media="(min-width: 1280px)" srcset="img/catalog/tig/AOTAITIG315.jpg">
                 <img src="img/catalog/tig/AOTAI%20AMIG%20350-mob.jpg" alt="image">
@@ -270,7 +270,7 @@
             </div>
           </div>
           <div class="catalog__item3-block2">
-            <div class="catalog__item3-image catalog__item3-image3">
+            <div class="catalog__item3-image catalog__item3-image3 catalog__item-js">
               <picture>
                 <source media="(min-width: 1280px)" srcset="img/catalog/tig/TETRIX300ACDC.jpg">
                 <img src="img/catalog/tig/TETRIX%20300%20AC%20DC%20COMFORT%202.0%20PULS%20TM%20EWM-mob.jpg" alt="image">
@@ -283,7 +283,7 @@
                 <button class="catalog__item1-button">Купить</button>
               </div>
             </div>
-            <div class="catalog__item3-image catalog__item3-image4">
+            <div class="catalog__item3-image catalog__item3-image4 catalog__item-js">
               <picture>
                 <source media="(min-width: 1280px)" srcset="img/catalog/tig/TECHTIG315PDSP.jpg">
                 <img src="img/catalog/tig/TECH%20TIG%20315%20P%20DSP%20AC%20DC%20(E106)-mob.jpg" alt="image">
@@ -304,7 +304,7 @@
           отдельных сварных точек (литых зон), частично перекрывающих одна другую
           и образующих герметичный шов.</p>
         <div class="catalog__item4-images">
-          <div class="catalog__item4-image">
+          <div class="catalog__item4-image catalog__img-midl catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/contact/DalexSF102.jpg">
               <img src="img/catalog/contact/Dalex%20SF%20102-mob.jpg" alt="image">
@@ -315,7 +315,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item4-image">
+          <div class="catalog__item4-image catalog__img-midl catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/contact/DalexPL%2063.jpg">
               <img src="img/catalog/contact/Dalex%20PL%2063-mob.jpg" alt="image">
@@ -326,7 +326,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item4-image">
+          <div class="catalog__item4-image catalog__img-big catalog__item-hover catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/contact/DalexPMS16-4.jpg">
               <img src="img/catalog/contact/Dalex%20PMS%2016-4-mob.jpg" alt="image">
@@ -337,7 +337,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item4-image">
+          <div class="catalog__item4-image catalog__img-big catalog__item-hover catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/contact/DIGITALPLUS7000BLUEWELD.jpg">
               <img src="img/catalog/contact/DIGITAL%20PLUS%207000%20BLUEWELD-mob.jpg" alt="image">
@@ -348,7 +348,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item4-image">
+          <div class="catalog__item4-image catalog__img-big catalog__item-hover catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/contact/DIGITALPLUS7000BLUEWELD.jpg">
               <img src="img/catalog/contact/DIGITAL%20PLUS%207000%20BLUEWELD-mob.jpg" alt="image">
@@ -359,7 +359,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item4-image">
+          <div class="catalog__item4-image catalog__img-small catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/contact/Dalex3329.jpg">
               <img src="img/catalog/contact/Dalex%203329-mob.jpg" alt="image">
@@ -370,7 +370,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item4-image">
+          <div class="catalog__item4-image catalog__img-small catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/contact/DalexА3112.jpg">
               <img src="img/catalog/contact/Dalex%20А3112-mob.jpg" alt="image">
@@ -381,7 +381,7 @@
               <button class="catalog__item1-button">Купить</button>
             </div>
           </div>
-          <div class="catalog__item4-image">
+          <div class="catalog__item4-image catalog__img-small catalog__item-js">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/catalog/contact/Dalex3329.jpg">
               <img src="img/catalog/contact/Dalex%203329-mob.jpg" alt="image">
@@ -401,7 +401,7 @@
           металлов и сплавов, включая разнородные металлы толщинами от 1,5 до 150 мм.</p>
         <div class="catalog__item3-wrap">
           <div class="catalog__item3-block1">
-            <div class="catalog__item3-image  catalog__item3-image1">
+            <div class="catalog__item3-image  catalog__item3-image1 catalog__item-js">
               <picture>
                 <source media="(min-width: 1280px)" srcset="img/catalog/automatic/Z-0019-392.jpg">
                 <img src="img/catalog/automatic/Z-0019-392-mob.jpg" alt="image">
@@ -412,7 +412,7 @@
                 <button class="catalog__item1-button">Купить</button>
               </div>
             </div>
-            <div class="catalog__item3-image">
+            <div class="catalog__item3-image catalog__item-js">
               <picture>
                 <source media="(min-width: 1280px)" srcset="img/catalog/automatic/Z-0019-584-1.jpg">
                 <img src="img/catalog/automatic/Z-0019-584-1-mob.jpg" alt="image">
@@ -425,7 +425,7 @@
             </div>
           </div>
           <div class="catalog__item3-block2">
-            <div class="catalog__item3-image catalog__item3-image3">
+            <div class="catalog__item3-image catalog__item3-image3 catalog__item-js">
               <picture>
                 <source media="(min-width: 1280px)" srcset="img/catalog/automatic/Z-0019-580.jpg">
                 <img src="img/catalog/automatic/Z-0019-580-mob.jpg" alt="image">
@@ -436,7 +436,7 @@
                 <button class="catalog__item1-button">Купить</button>
               </div>
             </div>
-            <div class="catalog__item3-image catalog__item3-image4">
+            <div class="catalog__item3-image catalog__item3-image4 catalog__item-js">
               <picture>
                 <source media="(min-width: 1280px)" srcset="img/catalog/automatic/MZ1250(М310).jpg">
                 <img src="img/catalog/automatic/MZ1250(М310)-mob.jpg" alt="image">
@@ -464,11 +464,13 @@
           <li>держатели цанги</li>
           <li class="catalog__item5-item">керамические сопла</li>
         </ul>
-        <button class="catalog__item5-button">Купить</button>
+        <button class="catalog__item5-button-mob">Купить</button>
+        <button class="catalog__item5-button"></button>
       </div>
       <div class="catalog__item6 catalog__item tab-cont">
         <h2>Горелки</h2>
-        <button class="catalog__item6-button">Купить</button>
+        <button class="catalog__item6-button-mob">Купить</button>
+        <button class="catalog__item6-button"></button>
       </div>
     </div>
   </section>
@@ -583,7 +585,7 @@
         </div>
         <div>
           <img src="img/partners/Logo_large_6.jpg" alt="Logo_large_1">
-          <p><span>Высокотехнологичное сварочное оборудование.</span> Компания была основана в 1972 году в Германии.  ELMATech производит уникальные интеллектуальные аппараты точечной и контактной сварки, нестандартное промышленное сварочное оборудование: машины контактной и точечной сварки промышленного применения, пистолеты односторонней контактной точечной сварки, клещи контактной точечной сварки. Основные цели ELMATech: решение специфических проблем клиента, наличие продукта с высокой надежностью и последними достижениями техники.</p>
+          <p><span>Оптимальное соотношение цены и качества.</span> «Кедр» предлагает широкий ассортимент аппаратов для сварочных работ, обладающих выносливостью в режиме жесткой эксплуатации при любых погодных условиях, экономичностью, в энергопотреблении и высокой производительностью. Эргономика, функциональность и надежность – основные критерии сварочных инверторов Кедр. </p>
         </div>
         <div>
           <img src="img/partners/Logo_large_7.jpg" alt="Logo_large_1">
@@ -629,7 +631,7 @@
     </div>
     <div class="map__area" id="map"></div>
   </section>
-  <section class="question">
+  <section class="question" id="question">
     <div class="container">
       <form>
         <h3>ЗАДАТЬ ВОПРОС</h3>
@@ -679,17 +681,28 @@
           </select>
           <p class="order2__clarification">Если вы пока не выбрали модель, оставьте это поле пустым</p>
         </p>
-        <p>
-          <label for="check2">Телефон</label><br>
+        <p class="order2__load">
+          <label for="check2">Прикрепить файл</label><br>
           <input class="order2__submit" type="submit" id="check2">
+          <p class="order2__file">Заявка на рассче...ния.pdf</p>
+          <span>Размер не должен привышать 25 Мб</span>
         </p>
-        <p>
-          <label for="check3">Электронная почта</label><br>
-          <input class="order1__input" type="text" id="check3">
+        <p class="order2__comment-text">
+          <label for="check3">Коментарий</label><br>
+          <textarea class="order2__comment" rows="10" cols="45" name="text"></textarea>
         </p>
-        <input class="order1__button" type="button" value="ДАЛЕЕ">
+        <input class="order2__button" type="button" value="ЗАКАЗАТЬ">
       </form>
 
+    </div>
+  </div>
+  <div class="order3">
+    <div class="container">
+      <h2>СПАСИБО</h2>
+      <p class="order3__text">Ваше сообщение успешно отправлено.<br> Наш менеджер свяжется с вами в ближайшее время</p>
+      <p class="order3__tel">Телефон горчей линии:<br><span>8(800) 775-09-85</span></p>
+      <p class="order3__time">Часы работы главного офиса в Екатеринбурге<br><span>9<sup>00</sup>-18<sup>00</sup></span></p>
+      <input class="order3__button" type="button" value="ЗАКРЫТЬ">
     </div>
   </div>
   <script src="js/libs.min.js"></script>

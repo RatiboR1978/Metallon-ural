@@ -1,5 +1,8 @@
 $(function () {
 
+    /*Slider http://kenwheeler.github.io/slick/
+     ========================*/
+
     $('.slider__list').slick({
         infinite: true,
         slidesToShow: 1,
@@ -42,6 +45,9 @@ $(function () {
     });
 
 
+    /*Catalog - tabs - mobile
+     ========================*/
+
     $(function(){
 
         $("#wr-tabs").on("click", ".tab", function(){
@@ -58,7 +64,31 @@ $(function () {
         });
     });
 
-    $('.header-mob_menu a').click(function (e) {
+    /*Catalog - tabs - desktop
+     ========================*/
+
+    $(function(){
+
+        $(".catalog__menu-wrap").on("click", ".tab-js", function(e){
+
+            var tabs = $(".tab-js"),
+                cont = $(".tab-cont");
+
+            e.preventDefault();
+
+            tabs.removeClass("catalog__menu-item--active");
+            cont.removeClass("catalog__item--active");
+            $(this).addClass("catalog__menu-item--active");
+            cont.eq($(this).index()).addClass("catalog__item--active");
+
+            return false;
+        });
+    });
+
+    /*Menu - scroll
+     ========================*/
+
+    $('.header-mob_menu a, .header-mob__order').click(function (e) {
         e.preventDefault();
         var currentBlock = $(this).attr('href'),
             currentBlockOffset = $(currentBlock).offset().top;
@@ -68,8 +98,42 @@ $(function () {
         },500)
     });
 
+    /*Select http://dimox.name/jquery-form-styler/
+     ========================*/
+
     $('select').styler();
-    $('.placeholder').html('')
+    $('.placeholder').html('');
+
+    /*Modals
+    ========================*/
+
+    $('.question__button').click(function () {
+        $('.order3').fadeIn();
+    });
+
+    $('.order3__button').click(function () {
+        $('.order3').fadeOut();
+    })
+
+    $('.equipment-selection__button-mob, .catalog__item-js').click(function () {
+        $('.order1').fadeIn();
+    });
+
+    $('.order1__button').click(function () {
+        $('.order1').fadeOut();
+        $('.order2').fadeIn();
+    })
+
+    $('.order2__button').click(function () {
+        $('.order2').fadeOut();
+    })
+
+
+
+
+
+
+
 
 
 

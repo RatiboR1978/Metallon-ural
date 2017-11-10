@@ -10,18 +10,18 @@
   padding: 16px 0 47px;
   p {
     font-family: PtSerifCaption, Arial, sans-serif;
-    font-size: 28px;
-    width: 752px;
-    margin-bottom: 50px;
-    line-height: 41px;
+    font-size: 10px;
+    width: 280px;
+    margin-bottom: 17px;
+    line-height: 12px;
     span {
       color: #9a3335
     }
-    @media (max-width: 1280px) {
-      font-size: 10px;
-      width: 280px;
-      margin-bottom: 17px;
-      line-height: 12px;
+    @media (min-width: 1280px) {
+      font-size: 25px;
+      width: 752px;
+      margin-bottom: 50px;
+      line-height: 36px;
     }
   }
   @media (min-width: 1280px) {
@@ -57,11 +57,4 @@
 
 .equipment-selection__button:active {
   background: url("../img/buttons/choose.png") -301px 0 no-repeat;
-}
-
-.equipment-selection__title {
-  @media (max-width: 1280px) {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
 }

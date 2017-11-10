@@ -6,6 +6,9 @@
   p {
     line-height: 13px;
   }
+  @media (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .slider-logos__title {

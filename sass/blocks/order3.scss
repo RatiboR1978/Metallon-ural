@@ -1,0 +1,47 @@
+.order3 {
+  padding: 32px 30px;
+  font-family: PtSerifCaption, Arial, sans-serif;
+  font-size: 10px;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  margin-left: -171px;
+  z-index: 999;
+  background-color: #fff;
+  display: none;
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  span {
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 21px;
+  }
+}
+
+.order3__text {
+  margin-bottom: 35px;
+}
+
+.order3__button {
+  display: block;
+  margin: 23px auto 0;
+  width: 230px;
+  height: 39px;
+  background-color: #9e3335;
+  border: none;
+  outline: none;
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.order3__tel {
+  margin-bottom: 26px;
+}
+
+.order3__time {
+  margin-bottom: 125px;
+}

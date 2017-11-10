@@ -68,7 +68,7 @@
   font-size: 22px;
   color: black;
   padding: 12px 20px;
-  margin-right: -5px;
+  margin-right: -6px;
 }
 
 .catalog__menu-item:hover {
@@ -127,6 +127,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-content: space-around;
+  @media (min-width: 1280px) {
+    width: 1260px;
+  }
 }
 
 .catalog__item1-image,
@@ -137,6 +140,9 @@
   border-radius: 10px;
   position: relative;
   cursor: pointer;
+  @media (min-width: 1280px) {
+    padding: 0;
+  }
 }
 
 .catalog__item3-image {
@@ -176,7 +182,7 @@
 .catalog__item4-image:nth-child(5),
 .catalog__item4-image:nth-child(2){
   @media (min-width: 1280px) {
-    margin-bottom: 30px;
+    margin-bottom: 22px;
   }
 }
 
@@ -187,14 +193,14 @@
   top: 145px;
   @media (min-width: 1280px) {
     top: 0;
-    left: 0;
+    left: 29px;
   }
 }
 
 .catalog__title {
   width: 112px;
   @media (min-width: 1280px) {
-    width: 366px;
+    width: 297px;
   }
 }
 
@@ -229,7 +235,7 @@
   margin: 2px 0 0;
   color: #9a3335;
   @media (min-width: 1280px) {
-    font-size: 55px;
+    font-size: 50px;
     margin: 0 0 10px;
     color: #9a3335;
   }
@@ -240,9 +246,8 @@
   font-size: 8px;
   margin: 0 0 18px;
   @media (min-width: 1280px) {
-    font-size: 24px;
+    font-size: 22px;
     margin: 0 0 20px;
-    width: 366px;
   }
 }
 
@@ -252,7 +257,7 @@
 
 .catalog__title-narrow {
   @media (min-width: 1280px) {
-    width: 267px;
+    width: 233px;
   }
 }
 
@@ -269,7 +274,7 @@
   justify-content: space-between;
   @media (min-width: 1280px) {
     display: block;
-    margin-right: 20px;
+    margin-right: 35px;
   }
 }
 
@@ -286,14 +291,20 @@
 
 .catalog__item3-image3 {
   @media (min-width: 1280px) {
-    margin-right: 20px;
-    padding-top: 70px;
+    margin-right: 35px;
+    padding-top: 130px;
+  }
+}
+
+.catalog__item3-image3:hover {
+  @media (min-width: 1280px) {
+    margin-right: 33px;
   }
 }
 
 .catalog__item3-image4 {
   @media (min-width: 1280px) {
-    padding-top: 55px;
+    padding-top: 130px;
   }
 }
 
@@ -301,6 +312,13 @@
   background: url("../img/catalog/consumables/consumables-mob.jpg") no-repeat;
   p {
     margin-bottom: 10px;
+    @media (min-width: 1280px) {
+      margin-bottom: 10px;
+      margin-top: -21px;
+    }
+  }
+  @media (min-width: 1280px) {
+    background: url("../img/catalog/consumables/consumables.jpg") -19px 0 no-repeat;
   }
 }
 
@@ -311,14 +329,19 @@
   margin: 0;
   list-style: none;
   line-height: 12px;
+  @media (min-width: 1280px) {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 47px;
+  }
 }
 
 .catalog__item5-item {
   color: #9c3335;
 }
 
-.catalog__item5-button,
-.catalog__item6-button {
+.catalog__item5-button-mob,
+.catalog__item6-button-mob {
   width: 239px;
   height: 39px;
   background-color: #9c3335;
@@ -329,10 +352,44 @@
   color: white;
   display: block;
   margin: 290px auto 30px;
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.catalog__item5-button,
+.catalog__item6-button {
+  @media (min-width: 1280px) {
+    width: 146px;
+    height: 46px;
+    background: url("../img/buttons/buy.png") no-repeat;
+  }
+}
+
+.catalog__item5-button {
+  @media (min-width: 1280px) {
+    margin-bottom: 328px;
+  }
+}
+
+.catalog__item6-button:active,
+.catalog__item5-button:active {
+  @media (min-width: 1280px) {
+    background: url("../img/buttons/buy.png") -146px 0 no-repeat;
+  }
 }
 
 .catalog__item6 {
   background: url("../img/catalog/burner/burner-mob.jpg") no-repeat;
+  @media (min-width: 1280px) {
+    background: url("../img/catalog/burner/burner.jpg") no-repeat;
+  }
+}
+
+.catalog__item6-button {
+  @media (min-width: 1280px) {
+    margin-bottom: 690px;
+  }
 }
 
 .catalog__item {
@@ -341,4 +398,36 @@
 
 .catalog__item--active {
   display: block;
+}
+
+.catalog__img-big {
+  @media (min-width: 1280px) {
+    padding: 105px 25px 30px;
+  }
+}
+
+
+.catalog__img-midl {
+  @media (min-width: 1280px) {
+    padding: 185px 40px 30px;
+  }
+}
+
+.catalog__item-hover:hover {
+   @media (min-width: 1280px) {
+     margin-bottom: 20px;
+   }
+ }
+
+
+.catalog__item3-image1:hover {
+  @media (min-width: 1280px) {
+    margin-bottom: 18px;
+  }
+}
+
+.catalog__img-small {
+  @media (min-width: 1280px) {
+    padding: 105px 30px 30px;
+  }
 }

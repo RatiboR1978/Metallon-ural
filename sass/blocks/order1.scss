@@ -1,5 +1,12 @@
 .order1 {
-  margin: 51px 0 104px;
+  padding: 32px 29px;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  margin-left: -171px;
+  z-index: 999;
+  background-color: #fff;
+  display: none;
   h2 {
     text-align: center;
   }

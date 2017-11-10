@@ -1,5 +1,12 @@
 .order2 {
-  margin: 51px 0 104px;
+  padding: 32px 29px;
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  margin-left: -171px;
+  z-index: 999;
+  background-color: #fff;
+  display: none;
   h2 {
     text-align: center;
   }
@@ -32,7 +39,53 @@
 .order2__submit {
   width: 29px;
   height: 23px;
-  background-image: url(../img/bt-mb.png);
+  background-image: url(../img/bt-mb2.png);
   background-size: cover;
   font-size: 0;
+  border: none;
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.order2__load {
+  margin-bottom: 0;
+  span {
+    font-size: 7px;
+    margin-bottom: 5px;
+  }
+}
+
+.order2__file {
+  margin: 4px 0 0;
+  font-size: 10px;
+}
+
+.order2__comment-text {
+  margin-top: 15px;
+}
+
+.order2__comment {
+  border: 2px solid #3c3c3b;
+  border-radius: 7px;
+  outline: none;
+  width: 269px;
+  resize: none;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.order2__button {
+  display: block;
+  margin: 23px auto 0;
+  width: 230px;
+  height: 39px;
+  background-color: #9e3335;
+  border: none;
+  outline: none;
+  font-family: PTSans-Bold, Arial, sans-serif;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 2px;
 }
