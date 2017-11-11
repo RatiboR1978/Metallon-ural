@@ -128,6 +128,26 @@ $(function () {
         $('.order2').fadeOut();
     })
 
+    /*Partners - tabs - desktop
+     ========================*/
+
+    $(function(){
+
+        $(".partners__logos").on("click", ".partners-tab-js", function(){
+
+            var tabs = $(".partners-tab-js"),
+                cont = $(".partners-tab-cont");
+
+
+            tabs.removeClass("partners__logo--active");
+            cont.removeClass("partners__item--active");
+            $(this).addClass("partners__logo--active");
+            cont.eq($(this).index()).addClass("partners__item--active");
+
+            return false;
+        });
+    });
+
 
 
 

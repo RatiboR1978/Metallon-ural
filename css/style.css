@@ -2431,3 +2431,56 @@ input[type='submit'].styler[disabled] {
 
 .order3__time {
   margin-bottom: 125px; }
+
+@media (min-width: 1280px) {
+  .partners {
+    padding: 64px 0 60px; } }
+
+.partners__wrap {
+  display: none; }
+  @media (min-width: 1280px) {
+    .partners__wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.partners__logos {
+  width: 700px; }
+
+.partners__items {
+  margin-top: -43px;
+  width: 521px;
+  position: relative; }
+
+.partners__item {
+  position: absolute;
+  background-color: #fff;
+  height: 645px;
+  display: none; }
+
+.partners__item-title {
+  font-family: PtSerifCaption, Arial, sans-serif;
+  font-size: 25px;
+  line-height: 36px; }
+
+.partners__logo {
+  border: 1px solid #3c3c3b;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  cursor: pointer; }
+
+.partners__logo--active {
+  margin: -2px;
+  border: 3px solid #9c3335; }
+
+.partners__logo:hover {
+  margin: -2px;
+  border: 3px solid #9c3335; }
+
+.partners__item-text {
+  font-size: 18px;
+  line-height: 25px; }
+
+.partners__item--active {
+  display: block; }
