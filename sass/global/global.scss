@@ -63,3 +63,16 @@ h3 {
     margin-bottom: 0;
   }
 }
+
+.img-mob{
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.img-desk {
+  display: none;
+  @media (min-width: 1280px) {
+    display: block;
+  }
+}
