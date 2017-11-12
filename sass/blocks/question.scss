@@ -1,3 +1,6 @@
+/*Question
+========================*/
+
 .question {
   background: url("../img/footerbg.jpg") no-repeat;
   background-size: cover;
@@ -9,6 +12,10 @@
     font-size: 14px;
     text-align: center;
     margin-bottom: 27px;
+    @media (min-width: 1280px) {
+      font-size: 50px;
+      text-align: right;
+    }
   }
   form {
     text-align: right;
@@ -16,7 +23,15 @@
       font-family: PTSans-Bold, Arial, sans-serif;
       font-size: 12px;
       display: block;
+      @media (min-width: 1280px) {
+        font-size: 22px;
+      }
     }
+  }
+  @media (min-width: 1280px) {
+    padding: 150px 0 229px;
+    background: url("../img/footerbg-desk.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
@@ -27,6 +42,10 @@
   border: none;
   outline: none;
   padding-left: 10px;
+  @media (min-width: 1280px) {
+    width: 278px;
+    height: 35px;
+  }
 }
 
 .question__name {
@@ -45,4 +64,26 @@
   font-size: 20px;
   color: white;
   cursor: pointer;
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.question__button-desktop {
+  display: none;
+  @media (min-width: 1280px) {
+    margin-top: 25px;
+    display: inline;
+    width: 190px;
+    height: 41px;
+    background: url("../img/buttons/phone.png") 0 0 no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: right;
+  }
+}
+
+.question__button-desktop:active {
+  background: url("../img/buttons/phone.png") -190px 0 no-repeat;
 }

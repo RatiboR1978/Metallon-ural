@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*normalize
+========================*/
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -372,6 +374,8 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+/*Fonts
+========================*/
 @font-face {
   font-family: 'PTSans-Bold';
   src: url("../fonts/PTSans-Bold.woff") format("woff");
@@ -408,6 +412,8 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 
+/*global
+========================*/
 body {
   position: relative;
   font-family: PTSans-Regular, Arial, sans-serif;
@@ -480,7 +486,10 @@ h3 {
     .img-desk {
       display: block; } }
 
-/* Slider */
+/*variables
+========================*/
+/*slick
+========================*/
 .slick-slider {
   position: relative;
   display: block;
@@ -554,7 +563,8 @@ h3 {
 .slick-arrow.slick-hidden {
   display: none; }
 
-/* Slider */
+/*slick-theme
+========================*/
 /* Icons */
 @font-face {
   font-family: "slick";
@@ -682,6 +692,8 @@ h3 {
     .slick-dots li.slick-active button:before {
       background-color: #141413; }
 
+/*jquery.formstyler
+========================*/
 .jq-checkbox,
 .jq-radio {
   position: relative;
@@ -796,6 +808,8 @@ h3 {
   /* в каких-то браузерах присутствует отступ */
   -webkit-appearance: none; }
 
+/*jquery.formstyler.theme
+========================*/
 .jq-selectbox {
   vertical-align: middle;
   cursor: pointer;
@@ -1087,6 +1101,8 @@ input[type='submit'].styler[disabled] {
           box-shadow: none;
   color: #888; }
 
+/*Header
+========================*/
 .header {
   padding: 28px 0 30px;
   border-bottom: 12px solid #3c3c3b;
@@ -1134,21 +1150,23 @@ input[type='submit'].styler[disabled] {
 
 .header__email {
   margin-right: 25px;
-  width: 56px;
-  height: 46px;
+  width: 50px;
+  height: 41px;
   background: url("../img/buttons/mail.png") 0 0 no-repeat; }
 
 .header__email:active {
-  background: url("../img/buttons/mail.png") -55px 0 no-repeat; }
+  background: url("../img/buttons/mail.png") -50px 0 no-repeat; }
 
 .header__order {
-  width: 211px;
-  height: 46px;
+  width: 190px;
+  height: 41px;
   background: url("../img/buttons/phone.png") 0 0 no-repeat; }
 
 .header__order:active {
-  background: url("../img/buttons/phone.png") -211px 0 no-repeat; }
+  background: url("../img/buttons/phone.png") -190px 0 no-repeat; }
 
+/*Header-mob
+========================*/
 .header-mob {
   position: relative; }
   @media (min-width: 1280px) {
@@ -1219,10 +1237,14 @@ input[type='submit'].styler[disabled] {
   .header-mob_menu a:last-child {
     margin-right: 0; }
 
+/*Slider
+========================*/
 @media (min-width: 1280px) {
   .slider {
     border-bottom: 12px solid #9a3335; } }
 
+/*Equipment-selection
+========================*/
 .equipment-selection {
   border-bottom: 12px solid #9a3335; }
   @media (min-width: 1280px) {
@@ -1267,8 +1289,8 @@ input[type='submit'].styler[disabled] {
       display: none; } }
 
 .equipment-selection__button {
-  width: 301px;
-  height: 76px;
+  width: 265px;
+  height: 67px;
   background: url("../img/buttons/choose.png") 0 0 no-repeat;
   display: none; }
   @media (min-width: 1280px) {
@@ -1276,8 +1298,10 @@ input[type='submit'].styler[disabled] {
       display: block; } }
 
 .equipment-selection__button:active {
-  background: url("../img/buttons/choose.png") -301px 0 no-repeat; }
+  background: url("../img/buttons/choose.png") -265px 0 no-repeat; }
 
+/*Catalog
+========================*/
 .catalog {
   padding-bottom: 18px;
   border-bottom: 3px solid #9a3335; }
@@ -1492,13 +1516,13 @@ input[type='submit'].styler[disabled] {
   @media (min-width: 1280px) {
     .catalog__item1-button {
       font-size: 0;
-      width: 146px;
-      height: 46px;
+      width: 115px;
+      height: 36px;
       background: url("../img/buttons/buy.png") 0 0 no-repeat; } }
 
 @media (min-width: 1280px) {
   .catalog__item1-button:active {
-    background: url("../img/buttons/buy.png") -146px 0 no-repeat; } }
+    background: url("../img/buttons/buy.png") -115px 0 no-repeat; } }
 
 .catalog__item1-price-yes {
   font-family: PTSansCaptionBold, Arial, sans-serif;
@@ -1508,7 +1532,7 @@ input[type='submit'].styler[disabled] {
   @media (min-width: 1280px) {
     .catalog__item1-price-yes {
       font-size: 50px;
-      margin: 0 0 10px;
+      margin: 0 0 2px;
       color: #9a3335; } }
 
 .catalog__item1-price-no {
@@ -1635,8 +1659,8 @@ input[type='submit'].styler[disabled] {
 @media (min-width: 1280px) {
   .catalog__item5-button,
   .catalog__item6-button {
-    width: 146px;
-    height: 46px;
+    width: 115px;
+    height: 36px;
     background: url("../img/buttons/buy.png") no-repeat; } }
 
 @media (min-width: 1280px) {
@@ -1646,7 +1670,7 @@ input[type='submit'].styler[disabled] {
 @media (min-width: 1280px) {
   .catalog__item6-button:active,
   .catalog__item5-button:active {
-    background: url("../img/buttons/buy.png") -146px 0 no-repeat; } }
+    background: url("../img/buttons/buy.png") -115px 0 no-repeat; } }
 
 .catalog__item6 {
   background: url("../img/catalog/burner/burner-mob.jpg") no-repeat; }
@@ -1684,6 +1708,8 @@ input[type='submit'].styler[disabled] {
   .catalog__img-small {
     padding: 105px 30px 30px; } }
 
+/*About
+========================*/
 .about__text {
   font-family: PtSerifCaption, Arial, sans-serif;
   font-size: 10px;
@@ -2088,6 +2114,8 @@ input[type='submit'].styler[disabled] {
   .about__border-big {
     border-bottom: 28px solid #9a3335; } }
 
+/*Advantages
+========================*/
 .advantages {
   background: url("../img/advantages/advantages-mob.jpg") no-repeat;
   background-size: cover;
@@ -2154,6 +2182,8 @@ input[type='submit'].styler[disabled] {
   .advantages__item-wrap:nth-child(1) {
     margin-bottom: 75px; } }
 
+/*Slider-logos
+========================*/
 .slider-logos span {
   font-family: PTSans-Bold, Arial, sans-serif;
   font-size: 10px; }
@@ -2181,37 +2211,79 @@ input[type='submit'].styler[disabled] {
 .slider-logos__text {
   margin-top: 25px; }
 
+/*Map
+========================*/
+.map {
+  position: relative; }
+
 .map__text {
   background-color: #9e3335;
   padding: 43px 0 35px;
   color: white; }
+  @media (min-width: 1280px) {
+    .map__text {
+      position: absolute;
+      z-index: 9999;
+      width: 50%;
+      min-height: 615px;
+      background-color: rgba(154, 51, 53, 0.9);
+      padding: 80px 0 35px; } }
 
 .map__title {
   font-family: PTSansCaptionBold, Arial, sans-serif;
   font-size: 28px;
   margin: 0; }
+  @media (min-width: 1280px) {
+    .map__title {
+      font-size: 50px; } }
 
 .map__section {
   font-family: PTSans-Bold, Arial, sans-serif;
   font-size: 12px;
   margin: 20px 0 10px; }
+  @media (min-width: 1280px) {
+    .map__section {
+      font-size: 22px;
+      margin: 20px 0 0; } }
 
 .map__section-text {
   font-family: PTSans-Bold, Arial, sans-serif;
   font-size: 18px;
   margin: 0;
   line-height: 24px; }
+  @media (min-width: 1280px) {
+    .map__section-text {
+      font-size: 36px;
+      line-height: 45px; } }
 
 .map__clarification {
   font-size: 10px;
   margin: 5px 0 35px; }
+  @media (min-width: 1280px) {
+    .map__clarification {
+      font-size: 18px; } }
 
 .map__section-margin {
   margin-bottom: 35px; }
 
 .map__area {
-  min-height: 405px; }
+  min-height: 400px; }
+  @media (min-width: 1280px) {
+    .map__area {
+      min-height: 730px; } }
 
+@media (min-width: 1280px) {
+  .map__wrap {
+    width: 570px; } }
+
+@media (min-width: 1280px) {
+  .map__container {
+    width: 570px;
+    margin-left: auto;
+    margin-right: 62px; } }
+
+/*Question
+========================*/
 .question {
   background: url("../img/footerbg.jpg") no-repeat;
   background-size: cover;
@@ -2223,12 +2295,24 @@ input[type='submit'].styler[disabled] {
     font-size: 14px;
     text-align: center;
     margin-bottom: 27px; }
+    @media (min-width: 1280px) {
+      .question h3 {
+        font-size: 50px;
+        text-align: right; } }
   .question form {
     text-align: right; }
     .question form label {
       font-family: PTSans-Bold, Arial, sans-serif;
       font-size: 12px;
       display: block; }
+      @media (min-width: 1280px) {
+        .question form label {
+          font-size: 22px; } }
+  @media (min-width: 1280px) {
+    .question {
+      padding: 150px 0 229px;
+      background: url("../img/footerbg-desk.jpg") no-repeat;
+      background-size: cover; } }
 
 .question__input {
   width: 143px;
@@ -2238,6 +2322,10 @@ input[type='submit'].styler[disabled] {
   border: none;
   outline: none;
   padding-left: 10px; }
+  @media (min-width: 1280px) {
+    .question__input {
+      width: 278px;
+      height: 35px; } }
 
 .question__name {
   margin-bottom: 15px; }
@@ -2254,7 +2342,29 @@ input[type='submit'].styler[disabled] {
   font-size: 20px;
   color: white;
   cursor: pointer; }
+  @media (min-width: 1280px) {
+    .question__button {
+      display: none; } }
 
+.question__button-desktop {
+  display: none; }
+  @media (min-width: 1280px) {
+    .question__button-desktop {
+      margin-top: 25px;
+      display: inline;
+      width: 190px;
+      height: 41px;
+      background: url("../img/buttons/phone.png") 0 0 no-repeat;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      text-align: right; } }
+
+.question__button-desktop:active {
+  background: url("../img/buttons/phone.png") -190px 0 no-repeat; }
+
+/*Order1
+========================*/
 .order1 {
   padding: 32px 29px;
   position: fixed;
@@ -2310,6 +2420,8 @@ input[type='submit'].styler[disabled] {
   -webkit-border-radius: 2px;
           border-radius: 2px; }
 
+/*Order2
+========================*/
 .order2 {
   padding: 32px 29px;
   position: fixed;
@@ -2390,6 +2502,8 @@ input[type='submit'].styler[disabled] {
   -webkit-border-radius: 2px;
           border-radius: 2px; }
 
+/*Order3
+========================*/
 .order3 {
   padding: 32px 30px;
   font-family: PtSerifCaption, Arial, sans-serif;
@@ -2432,6 +2546,8 @@ input[type='submit'].styler[disabled] {
 .order3__time {
   margin-bottom: 125px; }
 
+/*Partner
+========================*/
 @media (min-width: 1280px) {
   .partners {
     padding: 64px 0 60px; } }

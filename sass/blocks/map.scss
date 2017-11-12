@@ -1,19 +1,41 @@
+/*Map
+========================*/
+
+.map {
+  position: relative;
+}
+
 .map__text {
   background-color: #9e3335;
   padding: 43px 0 35px;
   color: white;
+  @media (min-width: 1280px) {
+    position: absolute;
+    z-index: 9999;
+    width: 50%;
+    min-height: 615px;
+    background-color: rgba(154,51,53,0.9);
+    padding: 80px 0 35px;
+  }
 }
 
 .map__title {
   font-family: PTSansCaptionBold, Arial, sans-serif;
   font-size: 28px;
   margin: 0;
+  @media (min-width: 1280px) {
+    font-size: 50px;
+  }
 }
 
 .map__section {
   font-family: PTSans-Bold, Arial, sans-serif;
   font-size: 12px;
   margin: 20px 0 10px;
+  @media (min-width: 1280px) {
+    font-size: 22px;
+    margin: 20px 0 0;
+  }
 }
 
 .map__section-text {
@@ -21,11 +43,18 @@
   font-size: 18px;
   margin: 0;
   line-height: 24px;
+  @media (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }
 
 .map__clarification {
   font-size: 10px;
   margin: 5px 0 35px;
+  @media (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
 
 .map__section-margin {
@@ -33,5 +62,22 @@
 }
 
 .map__area {
-  min-height: 405px;
+  min-height: 400px;
+  @media (min-width: 1280px) {
+    min-height: 730px;
+  }
+}
+
+.map__wrap {
+  @media (min-width: 1280px) {
+    width: 570px;
+  }
+}
+
+.map__container {
+  @media (min-width: 1280px) {
+    width: 570px;
+    margin-left: auto;
+    margin-right: 62px;
+  }
 }

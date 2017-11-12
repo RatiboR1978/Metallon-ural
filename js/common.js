@@ -88,7 +88,7 @@ $(function () {
     /*Menu - scroll
      ========================*/
 
-    $('.header-mob_menu a, .header-mob__order').click(function (e) {
+    $('.header-mob_menu a, .header-mob__order, .header_menu a, .header__order').click(function (e) {
         e.preventDefault();
         var currentBlock = $(this).attr('href'),
             currentBlockOffset = $(currentBlock).offset().top;
@@ -166,10 +166,20 @@ var myMap,
     myPlacemark;
 
 function init(){
-    myMap = new ymaps.Map("map", {
-        center: [56.86413757, 60.62005800],
-        zoom: 16
-    });
+    var mapArea = document.querySelector('.map__area');
+
+    if(mapArea.offsetHeight < 730) {
+        myMap = new ymaps.Map("map", {
+            center: [56.86413757, 60.62005800],
+            zoom: 16
+        });
+    } else {
+        myMap = new ymaps.Map("map", {
+            center: [56.86413757, 60.6130100],
+            zoom: 16
+        });
+    }
+
 
     myPlacemark = new ymaps.Placemark([56.86413757, 60.62005800], {
         hintContent: 'Металлон Урал'

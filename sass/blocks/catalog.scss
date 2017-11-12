@@ -1,3 +1,6 @@
+/*Catalog
+========================*/
+
 .catalog {
   padding-bottom: 18px;
   border-bottom: 3px solid #9a3335;
@@ -218,15 +221,15 @@
   border-radius: 2px;
   @media (min-width: 1280px) {
     font-size: 0;
-    width: 146px;
-    height: 46px;
+    width: 115px;
+    height: 36px;
     background: url("../img/buttons/buy.png") 0 0 no-repeat;
   }
 }
 
 .catalog__item1-button:active {
   @media (min-width: 1280px) {
-    background: url("../img/buttons/buy.png") -146px 0 no-repeat;
+    background: url("../img/buttons/buy.png") -115px 0 no-repeat;
   }
 }
 
@@ -237,7 +240,7 @@
   color: #9a3335;
   @media (min-width: 1280px) {
     font-size: 50px;
-    margin: 0 0 10px;
+    margin: 0 0 2px;
     color: #9a3335;
   }
 }
@@ -361,8 +364,8 @@
 .catalog__item5-button,
 .catalog__item6-button {
   @media (min-width: 1280px) {
-    width: 146px;
-    height: 46px;
+    width: 115px;
+    height: 36px;
     background: url("../img/buttons/buy.png") no-repeat;
   }
 }
@@ -376,7 +379,7 @@
 .catalog__item6-button:active,
 .catalog__item5-button:active {
   @media (min-width: 1280px) {
-    background: url("../img/buttons/buy.png") -146px 0 no-repeat;
+    background: url("../img/buttons/buy.png") -115px 0 no-repeat;
   }
 }
 

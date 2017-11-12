@@ -1,3 +1,6 @@
+/*Header
+========================*/
+
 .header {
   padding: 28px 0 30px;
   border-bottom: 12px solid #3c3c3b;
@@ -50,21 +53,21 @@
 
 .header__email {
   margin-right: 25px;
-  width: 56px;
-  height: 46px;
+  width: 50px;
+  height: 41px;
   background: url("../img/buttons/mail.png") 0 0 no-repeat;
 }
 
 .header__email:active {
-  background: url("../img/buttons/mail.png") -55px 0 no-repeat;
+  background: url("../img/buttons/mail.png") -50px 0 no-repeat;
 }
 
 .header__order {
-  width: 211px;
-  height: 46px;
+  width: 190px;
+  height: 41px;
   background: url("../img/buttons/phone.png") 0 0 no-repeat;
 }
 
 .header__order:active {
-  background: url("../img/buttons/phone.png") -211px 0 no-repeat;
+  background: url("../img/buttons/phone.png") -190px 0 no-repeat;
 }
