@@ -91,11 +91,21 @@ $(function () {
     $('.header-mob_menu a, .header-mob__order, .header_menu a, .header__order').click(function (e) {
         e.preventDefault();
         var currentBlock = $(this).attr('href'),
+            body = $('html, body'),
+            width = $(window).width();
             currentBlockOffset = $(currentBlock).offset().top;
+        console.log($(window).width());
 
-        $('html, body').animate({
-            scrollTop: currentBlockOffset - 20
-        },500)
+        if(currentBlock === '#company' && width >= 1263) {
+            body.animate({
+                scrollTop: currentBlockOffset - 150
+            },500)
+        } else {
+            body.animate({
+                scrollTop: currentBlockOffset - 60
+            },500)
+        }
+
     });
 
     /*Select http://dimox.name/jquery-form-styler/

@@ -1266,11 +1266,11 @@ input[type='submit'].styler[disabled] {
 /*Slider
 ========================*/
 .slider {
-  margin-top: 62px; }
+  padding-top: 62px; }
   @media (min-width: 1280px) {
     .slider {
       border-bottom: 12px solid #9a3335;
-      margin-top: 122px; } }
+      padding-top: 122px; } }
 
 /*Equipment-selection
 ========================*/
