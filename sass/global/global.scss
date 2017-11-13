@@ -79,3 +79,25 @@ h3 {
     display: block;
   }
 }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.bt-up {
+  display: none;
+  @media (min-width: 1280px) {
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor:pointer;
+    width: 43px;
+    height: 44px;
+    background: url("../img/bt-up.png") no-repeat;
+    border: none;
+    z-index: 999;
+  }
+}

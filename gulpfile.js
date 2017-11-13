@@ -78,13 +78,13 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 		'css/style.css',
 		'css/style.min.css'
 		])
-	.pipe(gulp.dest('dist/css'))
+	.pipe(gulp.dest('dist/css'));
 
 	var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
-	.pipe(gulp.dest('dist/fonts'))
+	.pipe(gulp.dest('dist/fonts'));
 
 	var buildJs = gulp.src('js/**/*') // Переносим скрипты в продакшен
-	.pipe(gulp.dest('dist/js'))
+	.pipe(gulp.dest('dist/js'));
 
 	var buildHtml = gulp.src('*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist'));

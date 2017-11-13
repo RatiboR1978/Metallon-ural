@@ -1,0 +1,13 @@
+.order1-desktop {
+  width: 1178px;
+  height: 1070px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  display: none;
+  border-radius: 10px;
+  @media (min-width: 1280px) {
+
+  }
+}

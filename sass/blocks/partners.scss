@@ -7,6 +7,13 @@
   }
 }
 
+.partners__title {
+  display: none;
+  @media (min-width: 1280px) {
+    display: block;
+  }
+}
+
 .partners__wrap {
   display: none;
   @media (min-width: 1280px) {

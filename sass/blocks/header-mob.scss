@@ -2,13 +2,18 @@
 ========================*/
 
 .header-mob {
-  position: relative;
+  z-index: 999;
+  background-color: #fff;
   @media (min-width: 1280px) {
     display: none;
   }
 }
 
-.header-mob:before {
+.header-mob__container {
+  position: relative;
+}
+
+.header-mob__container:before {
   position: absolute;
   content: '';
   width: 100%;
