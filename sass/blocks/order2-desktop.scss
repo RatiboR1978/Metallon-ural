@@ -1,0 +1,69 @@
+/*order2-desktop
+========================*/
+
+.order2-desktop {
+  width: 1061px;
+  height: 572px;
+  position: fixed;
+  top: 27px;
+  left: 50%;
+  margin-left: -596px;
+  background: white;
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 65px 0 100px 117px;
+  display: none;
+  h2 {
+    margin: 0 0 30px;
+  }
+  span {
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 55px;
+  }
+}
+
+.order2-desktop__text {
+  font-family: PtSerifCaption, Arial, sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  margin: 0;
+}
+
+.order2-desktop__text2 {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.order2-desktop__text3 {
+  font-family: PtSerifCaption, Arial, sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.order2-desktop__wrap {
+  position: relative;
+}
+
+.order2-desktop__close {
+  width: 41px;
+  height: 41px;
+  background: url("../img/buttons/xclose.png") no-repeat;
+  position: absolute;
+  top: -32px;
+  right: 40px;
+}
+
+.order2-desktop__button {
+  width: 211px;
+  height: 46px;
+  background: url("../img/buttons/close.png") 0 0 no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.order2-desktop__button:active {
+  background: url("../img/buttons/close.png") -211px 0 no-repeat;
+}

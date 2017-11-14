@@ -1,13 +1,111 @@
+/*order1-desktop
+========================*/
+
 .order1-desktop {
-  width: 1178px;
-  height: 1070px;
+  width: 721px;
+  height: 795px;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 27px;
+  left: 50%;
+  margin-left: -487px;
   background: white;
   display: none;
   border-radius: 10px;
-  @media (min-width: 1280px) {
-
+  z-index: 1000;
+  padding: 50px 143px 50px 92px;
+  label {
+    font-family: PTSans-Bold, Arial, sans-serif;
+    font-size: 22px;
+    display: block;
+    margin-bottom: -10px;
   }
+  span {
+    font-size: 12px;
+  }
+}
+
+.order1-desktop__wrap {
+  position: relative;
+}
+
+.order1-desktop__close {
+  width: 41px;
+  height: 41px;
+  background: url("../img/buttons/xclose.png") no-repeat;
+  position: absolute;
+  top: -24px;
+  right: -113px;
+}
+
+.order1-desktop__title {
+  margin: 0 0 15px 0;
+}
+
+.order1-desktop__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order1-desktop__name {
+  margin-top: 0;
+}
+
+.order1-desktop__text {
+  font-family: PtSerifCaption, Arial, sans-serif;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.order1-desktop__comment {
+  width: 100%;
+  height: 96px;
+}
+
+.order1-desktop__clarification {
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.order1-desktop__file {
+  font-size: 17px;
+  margin: 3px 0 -6px 65px;
+}
+
+.order1-desktop__submit {
+  width: 58px;
+  height: 45px;
+  background: url("../img/buttons/bt_ds.png") 0 0 no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 0;
+  float: left;
+}
+
+.order1-desktop__input {
+  font-size: 16px;
+}
+
+.order1-desktop__button {
+  width: 190px;
+  height: 41px;
+  background: url("../img/buttons/phone.png") 0 0 no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.order1-desktop__button:active {
+  background: url("../img/buttons/phone.png") -190px 0 no-repeat;
+}
+
+.order1-desktop__overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
 }

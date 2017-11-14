@@ -125,8 +125,38 @@ $(function () {
         window.location = 'index.html';
     });
 
-    $('.equipment-selection__button-mob, .catalog__item-js').on("click", function() {
+    $('.equipment-selection__button-mob').on("click", function() {
         window.location = 'form.html';
+    });
+
+    $('.catalog__item-js').on("click", function() {
+        var width = $(window).width();
+        if(width < 1263) {
+            window.location = 'form.html';
+        } else {
+            $('.order1-desktop').fadeIn();
+            $('.order1-desktop__overlay').fadeIn();
+        }
+    });
+
+    $('.equipment-selection__button').on("click", function() {
+        $('.order1-desktop').fadeIn();
+        $('.order1-desktop__overlay').fadeIn();
+    });
+
+    $('.order1-desktop__button').on("click", function() {
+        $('.order1-desktop').fadeOut();
+        $('.order2-desktop').fadeIn();
+    });
+
+    $('.order1-desktop__close').on("click", function() {
+        $('.order1-desktop').fadeOut();
+        $('.order1-desktop__overlay').fadeOut()
+    });
+
+    $('.order2-desktop__close, .order2-desktop__button').on("click", function() {
+        $('.order2-desktop').fadeOut();
+        $('.order1-desktop__overlay').fadeOut()
     });
 
     $('.order1__button').click(function () {
@@ -134,8 +164,13 @@ $(function () {
         $('.order2').fadeIn();
     });
 
+    $('.question__button-desktop').click(function () {
+        $('.order2-desktop').fadeIn();
+        $('.order1-desktop__overlay').fadeIn();
+    });
+
     $('.order2__button').click(function () {
-        window.location = 'index.html';
+        window.location = 'thanks.html';
     });
 
     /*Partners - tabs - desktop
