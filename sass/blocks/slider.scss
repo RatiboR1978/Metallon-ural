@@ -4,7 +4,14 @@
 .slider {
   padding-top: 62px;
   @media (min-width: 1280px) {
-    border-bottom: 12px solid #9a3335;
     padding-top: 120px;
+  }
+}
+
+.slider__wrap {
+  @media (min-width: 1297px) {
+    width: 1280px;
+    margin: 0 auto;
+    border-bottom: 12px solid #9a3335;
   }
 }

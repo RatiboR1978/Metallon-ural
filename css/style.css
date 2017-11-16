@@ -1278,8 +1278,13 @@ input[type='submit'].styler[disabled] {
   padding-top: 62px; }
   @media (min-width: 1280px) {
     .slider {
-      border-bottom: 12px solid #9a3335;
       padding-top: 120px; } }
+
+@media (min-width: 1297px) {
+  .slider__wrap {
+    width: 1280px;
+    margin: 0 auto;
+    border-bottom: 12px solid #9a3335; } }
 
 /*Equipment-selection
 ========================*/
