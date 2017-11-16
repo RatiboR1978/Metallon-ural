@@ -4,8 +4,7 @@
 .equipment-selection {
   border-bottom: 12px solid #9a3335;
   @media (min-width: 1280px) {
-    background: url("../img/bgEquipment.jpg") no-repeat;
-    background-size: cover;
+
   }
 }
 
@@ -21,14 +20,18 @@
       color: #9a3335
     }
     @media (min-width: 1280px) {
-      font-size: 25px;
+      font-size: 20px;
       width: 752px;
-      margin-bottom: 50px;
+      margin-bottom: 34px;
       line-height: 36px;
     }
   }
   @media (min-width: 1280px) {
     padding: 90px 0 70px;
+    background: url("../img/bgEquipment.jpg") no-repeat;
+    h2 {
+      margin-bottom: 34px;
+    }
   }
 }
 

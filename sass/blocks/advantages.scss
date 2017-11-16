@@ -19,7 +19,7 @@
   @media (min-width: 1280px) {
     background: url("../img/advantages/advantages.jpg") no-repeat;
     background-size: cover;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 }
 
@@ -38,8 +38,19 @@
         margin: 0 auto;
       }
     }
+  h4 {
+    @media (min-width: 1280px) {
+      font-family: PtSerifCaption, Arial, sans-serif;
+      font-size: 25px;
+      line-height: 36px;
+      margin-bottom: 5px;
+    }
+  }
   @media (min-width: 1280px) {
     width: 415px;
+    p {
+      margin: 0;
+    }
   }
 }
 

@@ -6,9 +6,11 @@
   font-size: 10px;
   line-height: 13px;
   @media (min-width: 1280px) {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 36px;
-    margin-bottom: 55px;
+    margin-top: 0;
+    margin-bottom: 45px;
+    width: 608px;
   }
 }
 
@@ -42,7 +44,7 @@
   @media (min-width: 1280px) {
     width: 22px;
     height: 22px;
-    top: -56px;
+    top: -47px;
     right: 610px;
   }
 }
@@ -55,7 +57,7 @@
     width: 22px;
     height: 22px;
     background-color: #9c3335;
-    top: -56px;
+    top: -47px;
     right: 140px;
   }
 }
@@ -97,7 +99,7 @@
   @media (min-width: 1280px) {
     display: block;
     font-family: PtSerifCaption, Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     color: #993434;
     padding-left: 90px;
@@ -116,7 +118,7 @@
   @media (min-width: 1280px) {
     width: 22px;
     height: 22px;
-    top: -109px;
+    top: -115px;
     right: 95px;
   }
 }
@@ -133,7 +135,7 @@
   @media (min-width: 1280px) {
     width: 22px;
     height: 22px;
-    bottom: -109px;
+    bottom: -113px;
     left: 310px;
   }
 }
@@ -152,12 +154,12 @@
   position: relative;
   @media (min-width: 1280px) {
     float: left;
-    width: 500px;
+    width: 480px;
     font-size: 18px;
     line-height: 25px;
-    padding-right: 60px;
+    padding-right: 28px;
     border-right: 5px solid #9a3335;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
   }
 }
 
@@ -193,7 +195,7 @@
 
 .about__office-img {
   @media (min-width: 1280px) {
-    padding: 20px 0 0 68px;
+    padding: 20px 0 0 28px;
   }
 }
 
@@ -203,7 +205,7 @@
     content: "Офис компании";
     font-family: PTSans-Italic, Arial, sans-serif;
     font-size: 18px;
-    bottom: -61px;
+    bottom: -54px;
     right: 240px;
   }
 }
@@ -242,11 +244,11 @@
 
 .about__company-text {
   @media (min-width: 1280px) {
-    width: 822px;
+    width: 618px;
     font-family: PtSerifCaption, Arial, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0 0 65px;
-    line-height: 36px;
+    line-height: 30px;
   }
 }
 
@@ -268,6 +270,13 @@
   }
 }
 
+.about__leader {
+  @media (min-width: 1280px) {
+    width: 650px;
+    padding-top: 17px;
+  }
+}
+
 .about__company-images {
   display: flex;
   flex-direction: column;
@@ -282,9 +291,9 @@
   position: absolute;
   content: '';
   height: 3px;
-  width: 652px;
+  width: 580px;
   background-color: #9c3335;
-  top: 80px;
+  top: 70px;
   right: 0;
 }
 
@@ -293,9 +302,9 @@
   position: absolute;
   content: '';
   height: 3px;
-  width: 930px;
+  width: 825px;
   background-color: #9c3335;
-  top: 80px;
+  top: 70px;
   right: 0;
 }
 
@@ -303,9 +312,9 @@
   position: absolute;
   content: '';
   height: 3px;
-  width: 683px;
+  width: 578px;
   background-color: #9c3335;
-  top: 80px;
+  top: 70px;
   right: 0;
 }
 
@@ -313,9 +322,9 @@
   position: absolute;
   content: '';
   height: 3px;
-  width: 1061px;
+  width: 940px;
   background-color: #9c3335;
-  top: 80px;
+  top: 70px;
   right: 0;
 }
 
@@ -323,9 +332,9 @@
   position: absolute;
   content: '';
   height: 3px;
-  width: 803px;
+  width: 690px;
   background-color: #9c3335;
-  top: 80px;
+  top: 70px;
   right: 0;
 }
 
@@ -341,13 +350,18 @@
   width: 421px;
   padding-left: 116px;
   position: relative;
+  @media (min-width: 1280px) {
+    p {
+      line-height: 25px;
+    }
+  }
 }
 
 .about__service-text:after {
   position: absolute;
   content: '';
   width: 5px;
-  height: 540px;
+  height: 506px;
   background-color: #9c3335;
   top: -50px;
   left: 58px;
@@ -371,6 +385,9 @@
     font-size: 18px;
     text-align: center;
     margin: 0;
+    @media (min-width: 1280px) {
+      padding-top: 5px;
+    }
   }
 }
 
@@ -392,6 +409,15 @@
     h2 {
       margin-bottom: 32px;
     }
+    p {
+      line-height: 25px;
+    }
+  }
+}
+
+.about__service-question {
+  @media (min-width: 1280px) {
+    margin-bottom: 55px;
   }
 }
 
@@ -416,7 +442,7 @@
   position: absolute;
   content: '';
   width: 5px;
-  height: 313px;
+  height: 353px;
   background-color: #9c3335;
   top: -4px;
   right: 69px;

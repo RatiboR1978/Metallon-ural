@@ -98,7 +98,11 @@ $(function () {
 
         if(currentBlock === '#company' && width >= 1263) {
             body.animate({
-                scrollTop: currentBlockOffset - 150
+                scrollTop: currentBlockOffset - 130
+            },500)
+        } else if(currentBlock === '#catalog' && width >= 1263) {
+            body.animate({
+                scrollTop: currentBlockOffset - 132
             },500)
         } else {
             body.animate({
