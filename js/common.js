@@ -120,16 +120,6 @@ $(function () {
 
     /*Modals
     ========================*/
-    var name = $('#check5'),
-        email = $('#check3'),
-        emailTitle = $('#email'),
-        nameTitle = $('#name'),
-        order1Desk = $('.order1-desktop'),
-        order2Desk = $('.order2-desktop'),
-        overlay = $('.order1-desktop__overlay'),
-        pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i,
-        warning1 = $('.order1__warning1'),
-        warning2 = $('.order1__warning2');
 
     $('.question__button').click(function () {
         window.location = 'thanks.html';
@@ -145,58 +135,35 @@ $(function () {
 
     $('.catalog__item-js').on("click", function() {
         var width = $(window).width();
-        warning1.css('display', 'none');
-        nameTitle.css('color', 'black');
-        name.css('border-color', '#3c3c3b');
-        emailTitle.css('color', 'black');
-        email.css('border-color', '#3c3c3b');
-        warning2.css('display', 'none');
-        name.val('');
-        email.val('');
         if(width < 1263) {
             window.location = 'form.html';
         } else {
-            order1Desk.fadeIn();
-            overlay.fadeIn();
+            $('.order1-desktop').fadeIn();
+            $('.order1-desktop__overlay').fadeIn();
         }
     });
 
     $('.equipment-selection__button').on("click", function() {
-        warning1.css('display', 'none');
-        nameTitle.css('color', 'black');
-        name.css('border-color', '#3c3c3b');
-        emailTitle.css('color', 'black');
-        email.css('border-color', '#3c3c3b');
-        warning2.css('display', 'none');
-        name.val('');
-        email.val('');
-        order1Desk.fadeIn();
-        overlay.fadeIn();
+        $('#login').val('');
+        $('#email').val('');
+        $('#phone').val('');
+        $('.order1-desktop').fadeIn();
+        $('.order1-desktop__overlay').fadeIn();
     });
 
-    $('.order1-desktop__button').on("click", function() {
-        if(name.val().length === 0) {
-            warning1.fadeIn();
-            nameTitle.css('color', '#9c3335');
-            name.css('border-color', '#9c3335');
-        } else if (!pattern.test(email.val())) {
-            emailTitle.css('color', '#9c3335');
-            email.css('border-color', '#9c3335');
-            warning2.fadeIn();
-        } else {
-            order1Desk.fadeOut();
-            order2Desk.fadeIn();
-        }
-    });
+    /*$('.order1-desktop__button').on("click", function() {
+        $('.order1-desktop').fadeOut();
+        $('.order2-desktop').fadeIn();
+    });*/
 
     $('.order1-desktop__close').on("click", function() {
-        order1Desk.fadeOut();
-        overlay.fadeOut()
+        $('.order1-desktop').fadeOut();
+        $('.order1-desktop__overlay').fadeOut()
     });
 
     $('.order2-desktop__close, .order2-desktop__button').on("click", function() {
-        order2Desk.fadeOut();
-        overlay.fadeOut()
+        $('.order2-desktop').fadeOut();
+        $('.order1-desktop__overlay').fadeOut()
     });
 
     $('.order1__button').click(function () {
@@ -205,8 +172,8 @@ $(function () {
     });
 
     $('.question__button-desktop').click(function () {
-        order2Desk.fadeIn();
-        overlay.fadeIn();
+        $('.order2-desktop').fadeIn();
+        $('.order1-desktop__overlay').fadeIn();
     });
 
     $('.order2__button').click(function () {
@@ -256,6 +223,75 @@ $(function () {
     $('.header-mob__logo').click(function() {
         $('body,html').animate({scrollTop:0},800);
     });
+
+
+    /*
+
+     ===============================*/
+
+    $('#closeForm').on("click", function() {
+        $(".text-error").remove();
+        $("#login, #email, #phone").removeClass('error');
+        $('#loginTitle, #emailTitle, #phoneTitle').removeClass('title-error');
+    });
+
+
+    $('.order1-desktop__button').on('click', function(event) {
+        if ( validateForm() ) { // если есть ошибки возвращает true
+            event.preventDefault();
+        } else {
+            $('.order1-desktop').fadeOut();
+            $('.order2-desktop').fadeIn();
+        }
+    });
+
+    function validateForm() {
+        $(".text-error").remove();
+        $("#login, #email, #phone").removeClass('error');
+        $('#loginTitle, #emailTitle, #phoneTitle').removeClass('title-error');
+
+        // Проверка логина
+        var el_l    = $("#login");
+        if ( el_l.val().length === 0 ) {
+            var v_login = true;
+            el_l.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
+            $(".for-login").css({top: el_l.position().top + el_l.outerHeight() + 2});
+            $("#login").addClass('error');
+            $('#loginTitle').addClass('title-error');
+        }
+
+
+        // Проверка e-mail
+
+        var reg     = /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.([a-z]{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/i;
+        var el_e    = $("#email");
+        var v_email = el_e.val()?false:true;
+
+        if ( v_email ) {
+            el_e.after('<div class="text-error for-email">Поле e-mail обязательно к заполнению</div>');
+            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
+            $("#email").addClass('error');
+            $('#emailTitle').addClass('title-error');
+        } else if ( !reg.test( el_e.val() ) ) {
+            v_email = true;
+            el_e.after('<div class="text-error for-email">Проверьте правильность заполнения поля</div>');
+            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
+            $("#email").addClass('error');
+            $('#emailTitle').addClass('title-error');
+        }
+
+        var el_p    = $("#phone");
+        if ( el_p.val().length === 0 ) {
+            var v_phone = true;
+            el_p.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
+            $(".for-login").css({top: el_p.position().top + el_p.outerHeight() + 2});
+            $("#phone").addClass('error');
+            $('#phoneTitle').addClass('title-error');
+        }
+
+
+        return ( v_login || v_email || v_phone);
+    }
 
 
 

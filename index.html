@@ -780,7 +780,7 @@
   <div class="order1-desktop__overlay"></div>
   <div class="order1-desktop">
     <div class="order1-desktop__wrap">
-      <button class="order1-desktop__close"></button>
+      <button class="order1-desktop__close" id="closeForm"></button>
       <h2 class="order1-desktop__title">ЗАКАЗАТЬ ОБОРУДОВАНИЕ</h2>
       <p class="order1-desktop__text">Оставте вашу заявку и наш менеджер свяжется с вами.</p>
       <p>Если вы не нашли необходимое вам оборудование, просто напишите об этом в коментарии к заявке и мы обязательно найдем, то что вам необходимо, либо предложим самую подходящую альтернативу из нашего ассортимента.</p>
@@ -788,21 +788,18 @@
       <form>
         <div class="order1-desktop__container">
           <div class="order1-desktop__order1">
-            <p class="order1-desktop__name">
-              <label id="name" for="check5">Ваше имя</label><br>
-              <input class="order1__input order1-desktop__input"  type="text" id="check5"><br>
-              <span class="order1__warning1">Пожалуйста, заполните это поле</span>
-            </p>
-            <p>
-              <label id="email" for="check3">Электронная почта</label><br>
-              <input class="order1__input order1-desktop__input" type="text" id="check3"><br>
-              <span class="order1__warning2">Проверьте правильность заполнения поля</span>
-            </p>
-            <p>
-              <label for="check6">Телефон</label><br>
-              <input class="order1__input order1-desktop__input" type="text" id="check6">
-            </p>
-            <p>
+            <div class="order1-desktop__order1-item">
+              <label for="login" id="loginTitle">Ваше имя</label><br>
+              <input class="order1__input order1-desktop__input"  type="text" id="login">
+            </div>
+            <div class="order1-desktop__order1-item">
+              <label for="email" id="emailTitle">Электронная почта</label><br>
+              <input class="order1__input order1-desktop__input" type="text" name="email" id="email">
+            </div>
+            <div class="order1-desktop__order1-item">
+              <label for="phone" id="phoneTitle">Телефон</label><br>
+              <input class="order1__input order1-desktop__input" type="text" id="phone">
+            </div>
           </div>
           <div class="order1-desktop__order2">
             <label>Модель сварачного аппарат</label><br>
