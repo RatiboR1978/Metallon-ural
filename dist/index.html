@@ -9,42 +9,838 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <h1>bologna</h1>
-    <p class="page-header__text">awordpress theme for bloggers</p>
-    <div class="page-header__wrap">
-      <div class="page-header__social-link">
-        <ul class="page-header__list">
-          <li><a href="#"><img src="img/SVG/425-behance.svg" alt="behance"></a></li>
-          <li><a href="#"><img src="img/SVG/401-facebook.svg" alt="facebook"></a></li>
-          <li><a href="#"><img src="img/SVG/459-linkedin2.svg" alt="linkedin"></a></li>
-          <li><a href="#"><img src="img/SVG/466-pinterest.svg" alt="pinterest"></a></li>
+  <section class="header-mob js-header fixed">
+    <div class="header-mob__container">
+      <div class="container">
+        <div class="header-mob__wrap">
+          <div class="header-mob__block-contacts">
+            <div class="header-mob__logo">
+              <img src="img/logom.jpg" alt="logo">
+            </div>
+            <div class="header-mob__contacts">
+              <p class="header-mob__phone">8 (800) 775-09-84</p>
+              <p class="header-mob__phone-text">Звонок по РФ бесплатный</p>
+            </div>
+            <a href="#question" class="header-mob__order">Заказать звонок</a>
+          </div>
+          <nav class="header-mob_menu">
+            <a href="#catalog">Каталог</a>
+            <a href="#company">Компания</a>
+            <a href="#contacts">Контакты</a>
+          </nav>
+        </div>
+    </div>
+  </div>
+</section>
+  <section class="header js-header fixed">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__logo">
+          <img src="img/logo.png" alt="logo">
+        </div>
+        <nav class="header_menu">
+          <a href="#catalog">Каталог</a>
+          <a href="#company">Компания</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="header__contacts">
+          <p class="header__phone">8 (800) 775-09-84</p>
+          <p class="header__phone-text">Звонок по РФ бесплатный</p>
+        </div>
+        <a href="#" class="header__email"></a>
+        <a href="#question" class="header__order"></a>
+      </div>
+    </div>
+  </section>
+  <section class="slider">
+    <div class="slider__wrap">
+      <div class="slider__list">
+        <div><img src="img/banners/slide2.png" alt="slide1" width="100%"></div>
+        <div><img src="img/banners/slide1.jpg" alt="slide2" width="100%"></div>
+      </div>
+    </div>
+  </section>
+  <section class="equipment-selection">
+    <div class="container">
+      <div class="equipment-selection__wrap">
+        <h2>Сварочное оборудование</h2>
+        <p>Купите сварочное оборудование любой сложности
+          и получите <span>комплект расходных материалов
+          на месяц бесплатно.</span></p>
+        <p>Наш менеджер поможет подобрать оборудование
+          под любой запрос, а так же проконсультирует
+          по любым вопросам.</p>
+        <button class="equipment-selection__button"></button>
+        <button class="equipment-selection__button-mob">подобрать</button>
+      </div>
+    </div>
+    <button class="bt-up"></button>
+  </section>
+  <section class="catalog" id="catalog">
+    <div class="catalog__container-mob">
+      <div class="container">
+        <div class="catalog__menu-wrap-mob" id="wr-tabs">
+          <ul class="catalog__list">
+            <li class="catalog__list-item catalog__list-item--active tab">MMA</li>
+            <li class="catalog__list-item tab">MIG/MAG</li>
+            <li class="catalog__list-item tab">TIG</li>
+            <li class="catalog__list-item tab">Контактная и шовная</li>
+            <li class="catalog__list-item tab">Автоматическая</li>
+            <li class="catalog__list-item tab">Расходные материалы</li>
+            <li class="catalog__list-item tab">Горелки</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="catalog__menu-wrap">
+      <div class="container">
+        <nav class="catalog__menu">
+          <a href="#" class="catalog__menu-item tab-js catalog__menu-item--active">MMA</a>
+          <a href="#" class="catalog__menu-item tab-js">MIG/MAG</a>
+          <a href="#" class="catalog__menu-item tab-js">TIG</a>
+          <a href="#" class="catalog__menu-item tab-js">Контактная и шовная</a>
+          <a href="#" class="catalog__menu-item tab-js">Автоматическая</a>
+          <a href="#" class="catalog__menu-item tab-js">Расходные материалы</a>
+          <a href="#" class="catalog__menu-item tab-js">Горелки</a>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <div class="catalog__item1 tab-cont catalog__item catalog__item--active">
+        <h2>Mма сварка</h2>
+        <p class="catalog__item1-description">Ручная дуговая сварка штучными электродами с покрытием.
+          Применяется для сварки углеродистых и нержавеющих сталей.</p>
+        <div class="catalog__item1-images">
+          <div class="catalog__item1-image catalog__img-small catalog__item-hover catalog__item-js">
+            <div>
+              <img class="img-mob" src="img/catalog/mma/MerkleLiteARC180-mob.jpg" alt="image">
+              <img class="img-desk" src="img/catalog/mma/MerkleLiteARC180.jpg" alt="image">
+            </div>
+            <div class="catalog__item1-text">
+              <h3 class="catalog__title">Merkle LiteARC 180</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item1-image catalog__img-big catalog__item-hover catalog__item-js">
+            <div>
+              <img class="img-mob" src="img/catalog/mma/AOTAI%20ARC%20200-mob.jpg" alt="image">
+              <img class="img-desk" src="img/catalog/mma/AOTAIARC200.jpg" alt="image">
+            </div>
+            <div class="catalog__item1-text">
+              <h3 class="catalog__title">AOTAI ARC 200</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item1-image catalog__img-small catalog__item-js">
+            <div>
+              <img class="img-mob" src="img/catalog/mma/PICO%20160%20CEL%20PULS%20EWM-mob.jpg" alt="image">
+              <img class="img-desk" src="img/catalog/mma/PICO160CELPULSEWM.jpg" alt="image">
+            </div>
+            <div class="catalog__item1-text">
+              <h3 class="catalog__title">PICO 160 CEL PULS EWM</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item1-image catalog__img-small catalog__item-js">
+            <div>
+              <img class="img-mob" src="img/catalog/mma/ACTIV%20TIG%20227%20MV-mob.jpg" alt="image">
+              <img class="img-desk" src="img/catalog/mma/ACTIVTIG227MVPFCDC.jpg" alt="image">
+            </div>
+            <div class="catalog__item1-text">
+              <h3 class="catalog__title">ACTIV TIG 227 MV/PFC DC/
+                LIFT VRD BLUEWELD</h3>
+              <p class="catalog__item1-price-no catalog__item-price-big catalog__item-js">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item1-image catalog__img-small catalog__item-js">
+            <div>
+              <img class="img-mob" src="img/catalog/mma/TECH%20ARC%20205%20B%20(Z203)-mob.jpg" alt="image">
+              <img class="img-desk" src="img/catalog/mma/TECHARC205B(Z203).jpg" alt="image">
+            </div>
+            <div class="catalog__item1-text">
+              <h3 class="catalog__title">TECH ARC 205 B (Z203)</h3>
+              <p class="catalog__item1-price-yes">18 010₽</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__item2 catalog__item tab-cont">
+        <h2>MIG/MAG сварка</h2>
+        <p class="catalog__item2-description">Полуавтоматическая сварка электродной проволокой в среде защитного газа - инертного
+          (аргона) или активного (углекислого газа). Применяется для сварки сталей
+          (в том числе нержавеющих) и алюминиевых сплавов.</p>
+        <div class="catalog__item2-images">
+          <div class="catalog__item2-image catalog__item-hover catalog__item-js">
+            <img class="catalog__img-small img-mob" src="img/catalog/migMag/MIG-500F-mob.jpg" alt="image">
+            <img class="catalog__img-small img-desk" src="img/catalog/migMag/MIG-500F.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">MIG-500F</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item2-image catalog__item-hover catalog__item-js">
+            <img class="catalog__img-small img-mob" src="img/catalog/migMag/AOTAI%20AMIG%20500PM-mob.jpg" alt="image">
+            <img class="catalog__img-small img-desk" src="img/catalog/migMag/AOTAIAMIG500PM.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">AOTAI AMIG 500PM</h3>
+              <p class="catalog__item1-price-no catalog__title-narrow">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item2-image catalog__item-hover catalog__item-js">
+            <img class="catalog__img-small img-desk" src="img/catalog/migMag/MERKLESPEEDMIG.jpg" alt="image">
+            <img class="catalog__img-small img-mob" src="img/catalog/migMag/MERKLE%20SPEEDMIG%20452%20DW-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">MERKLE SPEEDMIG
+                452 DW</h3>
+              <p class="catalog__item1-price-no catalog__title-narrow">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item2-image catalog__item-hover catalog__item-js">
+            <img class="catalog__img-small img-desk" src="img/catalog/migMag/WEGA401EWM.jpg" alt="image">
+            <img class="catalog__img-small img-mob" src="img/catalog/migMag/WEGA%20401%20EWM-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">WEGA 401 EWM</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item2-image catalog__item-hover catalog__item-js">
+            <img class="catalog__img-small img-desk" src="img/catalog/migMag/MEGAMIG480BLUEWELD.jpg" alt="image">
+            <img class="catalog__img-small img-mob" src="img/catalog/migMag/MEGAMIG%20480%20BLUEWELD-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">MEGAMIG 480 BLUEWELD</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item2-image catalog__item-hover catalog__item-js">
+            <img class="catalog__img-small img-desk" src="img/catalog/migMag/TECHARC205B(Z203).jpg" alt="image">
+            <img class="catalog__img-small img-mob" src="img/catalog/migMag/TECH%20MIG%203500%20(N222)-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">TECH ARC 205 B (Z203)</h3>
+              <p class="catalog__item1-price-yes">136 220₽</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__item3 catalog__item tab-cont">
+        <h2>TIG СВАРКА</h2>
+        <p class="catalog__item3-description">Ручная сварка неплавящимися вольфрамовыми электродами в среде защитного газа - аргона.
+          Метод TIG на постоянном токе (TIG-DC) применяют для сталей, метод TIG
+          на переменном токе (TIG-AC) - для алюминиевых сплавов.</p>
+        <div class="catalog__item3-images">
+            <div class="catalog__item3-image  catalog__img-small catalog__item-hover catalog__item-js">
+              <img class="img-desk" src="img/catalog/tig/MerkleLogiTIG240ACDC.jpg" alt="image">
+              <img class="img-mob" src="img/catalog/tig/Merkle%20LogiTIG%20240%20AC%20DC-mob.jpg" alt="image">
+              <div class="catalog__item2-text">
+                <h3 class="catalog__title">Merkle LogiTIG 240 AC/DC</h3>
+                <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+                <button class="catalog__item1-button">Купить</button>
+              </div>
+            </div>
+            <div class="catalog__item3-image catalog__img-big catalog__item-hover catalog__item-js">
+              <img class="img-desk" src="img/catalog/tig/AOTAITIG315.jpg" alt="image">
+              <img class="img-mob" src="img/catalog/tig/AOTAI%20AMIG%20350-mob.jpg" alt="image">
+              <div class="catalog__item2-text">
+                <h3 class="catalog__title">AOTAI TIG 315</h3>
+                <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+                <button class="catalog__item1-button">Купить</button>
+              </div>
+            </div>
+            <div class="catalog__item3-image catalog__img-small catalog__item-hover catalog__item-js">
+              <img class="img-desk" src="img/catalog/tig/TETRIX300ACDC.jpg" alt="image">
+              <img class="img-mob" src="img/catalog/tig/TETRIX%20300%20AC%20DC%20COMFORT%202.0%20PULS%20TM%20EWM-mob.jpg" alt="image">
+              <div class="catalog__item2-text">
+                <h3 class="catalog__title">TETRIX 300 AC/DC
+                  COMFORT 2.0 PULS
+                  TM EWM</h3>
+                <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+                <button class="catalog__item1-button">Купить</button>
+              </div>
+            </div>
+            <div class="catalog__item3-image catalog__img-big catalog__item-hover catalog__item-js">
+              <img class="img-desk" src="img/catalog/tig/TECHTIG315PDSP.jpg" alt="image">
+              <img class="img-mob" src="img/catalog/tig/TECH%20TIG%20315%20P%20DSP%20AC%20DC%20(E106)-mob.jpg" alt="image">
+              <div class="catalog__item2-text">
+                <h3 class="catalog__title catalog__title-narrow">TECH TIG 315 P DSP
+                  AC/DC (E106)</h3>
+                <p class="catalog__item1-price-yes">87 370₽</p>
+                <button class="catalog__item1-button">Купить</button>
+              </div>
+            </div>
+        </div>
+        </div>
+      <div class="catalog__item4 catalog__item tab-cont">
+        <h2>КОНТАКТНАЯ И ШОВНАЯ СВАРКА</h2>
+        <p class="catalog__item2-description">Cварочный процесс, при котором детали соединяются швом, состоящим из ряда
+          отдельных сварных точек (литых зон), частично перекрывающих одна другую
+          и образующих герметичный шов.</p>
+        <div class="catalog__item4-images">
+          <div class="catalog__item4-image catalog__img-big catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/contact/DalexPMS16-4.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/contact/Dalex%20PMS%2016-4-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title catalog__title-narrow">Dalex PMS 16-4</h3>
+              <p class="catalog__item1-price-no ">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item4-image catalog__img-small catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/contact/DalexSF102.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/contact/Dalex%20SF%20102-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">Dalex SF 102</h3>
+              <p class="catalog__item1-price-no catalog__title-narrow">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item4-image catalog__img-small catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/contact/DIGITALPLUS7000BLUEWELD.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/contact/DIGITAL%20PLUS%207000%20BLUEWELD-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">DIGITAL PLUS 7000 BLUEWELD</h3>
+              <p class="catalog__item1-price-no catalog__item-price-big">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item4-image catalog__img-small catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/contact/BCP28BLUEWELD.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/contact/BCP28BLUEWELD-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">BCP 28 BLUEWELD</h3>
+              <p class="catalog__item1-price-no catalog__item-price-big">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item4-image catalog__img-small catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/contact/DalexPL%2063.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/contact/Dalex%20PL%2063-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">Dalex PL 63</h3>
+              <p class="catalog__item1-price-no catalog__title-narrow">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item4-image catalog__img-small catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/contact/Dalex3329.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/contact/Dalex%203329-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">Dalex 3329</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item4-image catalog__img-small catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/contact/DalexА3112.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/contact/Dalex%20А3112-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">Dalex А3112</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item4-image catalog__img-small catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/contact/PLUS400BLUEWELD.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/contact/PLUS400BLUEWELD-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">PLUS 400 BLUEWELD</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__item3 catalog__item tab-cont">
+        <h2>АВТОМАТИЧЕСКАЯ СВАРКА</h2>
+        <p class="catalog__item3-description">Cварка электрической дугой, горящей между концом сварочной проволоки и свариваемым
+          металлом под слоем флюса. Применяется в стационарных цеховых условиях для всех
+          металлов и сплавов, включая разнородные металлы толщинами от 1,5 до 150 мм.</p>
+        <div class="catalog__item3-images">
+          <div class="catalog__item3-image catalog__img-big catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/automatic/Z-0019-584-1.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/automatic/Z-0019-584-1-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">Z-0019-584-1</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item3-image catalog__img-small catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/automatic/Z-0019-392.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/automatic/Z-0019-392-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title">Z-0019-392</h3>
+              <p class="catalog__item1-price-no">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item3-image catalog__img-small catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/automatic/Z-0019-580.jpg" alt="image">
+            <img class="img-mob" src="img/catalog/automatic/Z-0019-580-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title catalog__title-narrow">Z-0019-580</h3>
+              <p class="catalog__item1-price-no catalog__title-narrow">Цену можно узнать по запросу</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+          <div class="catalog__item3-image catalog__img-big catalog__item-hover catalog__item-js">
+            <img class="img-desk" src="img/catalog/automatic/MZ1250(М310).jpg" alt="image">
+            <img class="img-mob" src="img/catalog/automatic/MZ1250(М310)-mob.jpg" alt="image">
+            <div class="catalog__item2-text">
+              <h3 class="catalog__title catalog__title-narrow">MZ 1250 (М310)</h3>
+              <p class="catalog__item1-price-yes">136 220₽</p>
+              <button class="catalog__item1-button">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__item5 catalog__item tab-cont">
+        <h2>расходные материалы</h2>
+        <p class="catalog__item3-description">Все расходные материалы в наличии.</p>
+        <ul class="catalog__item5-list">
+          <li class="catalog__item5-item">наконечники</li>
+          <li>направляющие каналы</li>
+          <li>газовые диффузоры</li>
+          <li>держатели наконечников</li>
+          <li>колпачки</li>
+          <li class="catalog__item5-item">газовые сопла</li>
+          <li>газовые линзы</li>
+          <li>держатели цанги</li>
+          <li class="catalog__item5-item">керамические сопла</li>
+        </ul>
+        <button class="catalog__item5-button-mob">Купить</button>
+        <button class="catalog__item5-button"></button>
+      </div>
+      <div class="catalog__item6 catalog__item tab-cont">
+        <h2>Горелки</h2>
+        <button class="catalog__item6-button-mob">Купить</button>
+        <button class="catalog__item6-button"></button>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="company">
+    <div class="container">
+      <h2 class="about__title">«Металлон Урал»</h2>
+      <p class="about__text">Помогаем сократить операционные расходы, засчет того, что наши клиенты могут купить все в одном месте.</p>
+    </div>
+    <div class="about__border"></div>
+    <div class="container">
+      <div class="about__wrap clearfix">
+        <div class="about__wrap-text">
+          <p>Компания «Металлон Урал» работает на рынке более 10 лет и является комплексным поставщиком решений для
+            производственных предприятий страны в области сварки: TIG, MIG/MAG, MMA, плазменной резки, компрессорного
+            оборудования, газовой резки, электроинструмента, систем промышленной вентиляции и других направлений.</p>
+          <p>«Металлон Урал» ставит в приоритет растущие потребности клиентов. Компания постоянно расширяет сеть
+            поставщиков, благодаря чему все необходимое можно купить в одном месте, затратив минимум усилий и времени на
+            выбор техники и оформление документов. В итоге это значительно сокращает операционные расходы Клиента.</p>
+          <p class="about__text-color">Почему выгодно сотрудничать с «Металлон Урал»:</p>
+          <ul class="about__advantages">
+            <li>- индивидуальный подход к решению задач;</li>
+            <li>- при покупке оборудования – расходники на месяц бесплатно;</li>
+            <li>- доставка до дверей предприятия/офиса/завода бесплатно.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="about__office-photo">
+            <img class="img-desk about__office-img" src="img/office.jpg" alt="image">
+          </div>
+          <img class="img-mob" src="img/office-mob.jpg" alt="image">
+          <p class="about__clarification">Офис компании</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="about__text-mob">
+        <p class="about__text">«Металлон Урал» - официальный дилер ведущих мировых производителей оборудования, запасных частей и расходных
+          материалов таких направлений</p>
+        <ul class="about__advantages2">
+          <li>- сварка: Merkle, Fubag, EWM, BlueWeld, Dinse & ESS, КЕДР, Dalex, AOTAI;</li>
+          <li>- плазменная резка: Hypertherm, Kjellberg;</li>
+          <li>- компрессорное оборудование: ABAC, COMARO, Remeza, Berg, Atlas Copco;</li>
+          <li>- газовая резка: Harris, GSE;</li>
+          <li>- системы промышленной вентиляции: Donaldson, Tigemma.</li>
         </ul>
       </div>
-      <nav class="page-header__menu">
-        <a href="#">home</a>
-        <a href="#">posttypes</a>
-        <a href="#">feautres</a>
-        <a href="#">pages</a>
-        <a href="#">categories</a>
-        <a href="#">contact</a>
-      </nav>
-      <form class="page-header__form">
-        <input class="page-header__input" type="text">
-        <button class="page-header__search-submit" type="submit"></button>
+    </div>
+    <div class="about__phrase">
+      <div class="container">
+        <div class="about__phrase-wrap">
+          <img class="img-desk about__phrase-img" src="img/svar.jpg" alt="images">
+          <p class="about__phrase-text">Надежный поставщик и надежный заказчик – основная ценность компании.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="about__company">
+        <h2>ЛИДЕРЫ РЫНКА РАБОТАЮТ С НАМИ</h2>
+        <p class="about__company-text">«Металлон Урал» - официальный дилер ведущих мировых производителей оборудования, запасных частей и расходных
+          материалов таких направлений, как:</p>
+        <div class="about__company-wrap">
+          <div class="about__leader">
+            <p>- сварка: Merkle, Fubag, EWM, BlueWeld, Dinse & ESS, КЕДР, Dalex, AOTAI;</p>
+            <p>- плазменная резка: Hypertherm, Kjellberg;</p>
+            <p>- компрессорное оборудование: ABAC, COMARO, Remeza, Berg, Atlas Copco;</p>
+            <p>- газовая резка: Harris, GSE;</p>
+            <p>- системы промышленной вентиляции: Donaldson, Tigemma.</p>
+          </div>
+          <div class="about__company-images">
+            <div class="about__company-img1 about__company-img">
+              <img  src="img/about/Logos_12.jpg" alt="image">
+            </div>
+            <div class="about__company-img2 about__company-img">
+              <img src="img/about/Logos_22.jpg" alt="image">
+            </div>
+            <div class="about__company-img3 about__company-img">
+              <img  src="img/about/Logos_32.jpg" alt="image">
+            </div>
+            <div class="about__company-img4 about__company-img">
+              <img  src="img/about/Logos_42.jpg" alt="image">
+            </div>
+            <div class="about__company-img5 about__company-img">
+              <img  src="img/about/Logos_52.jpg" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about__border"></div>
+    <div class="container">
+      <div class="about__service-desk">
+        <div class="about__service-image">
+          <img src="img/service.jpg" alt="image">
+          <p>Сервисное обслуживание оборудования</p>
+        </div>
+        <div class="about__service-text">
+          <h2>СЕРВИСНАЯ СЛУЖБА</h2>
+          <p>Консультация сервисной службы по всем продуктовым линейкам, в т.ч. по сварочному оборудованию и системам плазменной резки – 24 часа в сутки: диагностика оборудования, пусконаладочные работы, планово-предупредительный ремонт, гарантийный ремонт, модернизация оборудования. </p>
+        </div>
+      </div>
+    </div>
+    <div class="about__border"></div>
+    <div class="container">
+      <div class="about__stock-wrap">
+        <div class="about__stock">
+          <h2>СКЛАД</h2>
+          <p>Сотрудники компании «Металлон Урал» обеспечат Вас продукцией высокого качества. Компания имеет свой склад продукции, что позволяет обеспечить поступление товаров в необходимом количестве, в нужное место и точно к назначенному сроку.</p>
+        </div>
+        <div class="about__reference">
+          <h2>СПРАВКА</h2>
+          <p>По вопросам покупки оборудования, а также для получения справочной информации по подбору сварочных аппаратов и расходных материалов, обращайтесь к менеджерам «Металлон Урал» по номеру 8-800-775-09-84 или электронной почте svarka@metallon-group.ru</p>
+          <p class="about__service-question">По вопросам работы сервисной службы напишите по эл. адресу: service@metallon-group.ru</p>
+        </div>
+      </div>
+    </div>
+    <div class="about__border-big"></div>
+    <div class="container">
+      <div class="about__company-mob">
+        <p>Компания имеет свой склад продукции, что позволяет обеспечить поступление товаров в необходимом количестве, в
+          нужное место и точно к назначенному сроку.</p>
+        <p>Консультация сервисной службы по всем продуктовым линейкам, в т.ч. по сварочному оборудованию и системам
+          плазменной резки – 24 часа в сутки: диагностика оборудования, пусконаладочные работы, планово-предупредительный
+          ремонт, гарантийный ремонт, модернизация оборудования.</p>
+        <picture>
+          <source media="(min-width: 1280px)" srcset="img/service.jpg">
+          <img src="img/service-mob.jpg" alt="image">
+        </picture>
+        <p class="about__clarification">Сервисное обслуживание оборудования</p>
+        <p>По вопросам покупки оборудования, а также для получения справочной информации по подбору сварочных аппаратов и
+          расходных материалов, обращайтесь к менеджерам «Металлон Урал» по номеру <span class="about__contact">8-800-775-09-84</span> или электронной почте
+          <span class="about__contact">svarka@metallon-group.ru</span></p>
+      </div>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+      <div class="advantages__wrap">
+        <div class="advantages__item-wrap">
+          <div class="advantages__item">
+            <img class="img-mob" src="img/advantages/icon_1.png" alt="icon_1">
+            <img class="img-desk" src="img/advantages/icon_12.png" alt="icon_12">
+            <h4>Квалификация</h4>
+            <p>Специалисты компании проходят регулярное обучение и обязательную сертификацию на заводах-производителях
+              оборудования. Средний опыт работы сотрудников «Металлон Урал» более 5 лет.</p>
+          </div>
+          <div class="advantages__item">
+            <img class="img-mob" src="img/advantages/icon_2.png" alt="icon_2">
+            <img class="img-desk" src="img/advantages/icon_22.png" alt="icon_22">
+            <h4>Доставка</h4>
+            <p>Срок поставки от 1 дня за счет отлаженной логистики и наличия склада. Бесплатная доставка до предприятия/офиса/завода.</p>
+          </div>
+        </div>
+        <div class="advantages__item-wrap">
+          <div class="advantages__item">
+            <img class="img-mob" src="img/advantages/icon_3.png" alt="icon_3">
+            <img class="img-desk" src="img/advantages/icon_32.png" alt="icon_32">
+            <h4>Прямые поставки
+              от производителя</h4>
+            <p>Весь необходимый спектр оборудования можно закупить в одном месте, выгодно сократив расход времени и денег: сварочное оборудование под любые задачи производства, горелки, расходные материалы: сопла, наконечники и т.п.</p>
+          </div>
+          <div class="advantages__item">
+            <img class="img-mob" src="img/advantages/icon_4.png" alt="icon_4">
+            <img class="img-desk " src="img/advantages/icon_42.png" alt="icon_42">
+            <h4>Качество</h4>
+            <p>Гарантированное качество продукции: от 2 до 5 лет и более. Надежный сервис на протяжении всего проекта, обеспечивается собственными силами специалистов компании.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners">
+    <div class="container">
+      <h2 class="partners__title">НАШИ ПАРТНЕРЫ</h2>
+      <div class="partners__wrap">
+        <div class="partners__logos">
+          <img class="partners__logo partners-tab-js partners__logo--active" src="img/partners/Logo_smal_1.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_2.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_3.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_4.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_5.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_6.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_7.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_8.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_9.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_10.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_11.jpg" alt="image">
+          <img class="partners__logo partners-tab-js" src="img/partners/Logo_smal_12.jpg" alt="image">
+        </div>
+        <div class="partners__items">
+          <div class="partners__item partners-tab-cont  partners__item--active">
+            <img src="img/partners/Logo_large_1.jpg" alt="">
+            <p class="partners__item-title">Оптимальные решения в промышленной сварке </p>
+            <p class="partners__item-text">для всех популярных видов сварки: MMA, MIG/MAG, TIG, а также аппараты SAW-сварки, контактной сварки, плазморезы и машины автоматической резки. Fubag предлагает новые виды горелок и полный ассортимент универсальных расходных материалов, которые подходят для сварочных горелок большинства производителей. Новые серии: INTIG – новые мощности в серии аргонодуговой сварки, SW/TW – сварка под слоем флюса, INCUT – автоматическая резка металла, TS – аппараты контактной сварки.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_2.jpg" alt="">
+            <p class="partners__item-title">Инновационные технологии в действии: </p>
+            <p class="partners__item-text">EWM forceArc pulse обеспечивает стабильную по направленности, мощную сварочную дугу с минимальной теплоотдачей и глубоким проваром. Технология идеально подходит для работы с нелегированными, низколегированными и высоколегированными сталями, а также высокопрочным мелкозернистыми сталями. Новинки года: TITAN XQR – индивидуальная конфигурация в зависимости от требований заказчика, TETRIX 230/300 SMART 2.0 PULS – универсальное применение аргонодуговой сварки, TAURUS 400 + DRIVE 4L BASIC – работа в экстремальных условиях.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_3.jpg" alt="">
+            <p class="partners__item-title">Технологии, инновации, развитие.</p>
+            <p class="partners__item-text">В текущем году инженеры BLUEWELD расширили функционал своих моделей в работе с алюминием, а также начали оснащать аппараты системой визуализации сварочного процесса WAVE OS – STRAMIG 243 WAVE. Благодаря данной технологии можно отслеживать, анализировать и контролировать производственный процесс, это гарантирует качество и повторяемость выполнения работ. Программы сварки можно настроить согласно индивидуальным потребностям или использовать многочисленные программы, хранящиеся в памяти. К другим новинкам года относятся аппараты: GALAXY 300 SYNERGIC / 400 SYNERGIC – отличное качество сварного шва. </p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_4.jpg" alt="">
+            <p class="partners__item-title">Сварочное оборудование будущего.</p>
+            <p class="partners__item-text">Компания Merkle (Германия) ведет свою деятельность с 1964 года. Более полувека ведутся непрерывные разработки и исследования в области электросварки, плазменной сварки, разрабатывается программное обеспечение для более рационального и эффективного управления сварочными процессами. Максимальная универсальность сварочных аппаратов достигнута с помощью технологий DeepArc: многократное увеличение скорости сварки, концентрированный прогрев, глубокий провар шва, отсутствие брызг и ColdMIG: существенное снижение теплоотдачи, сварка тонких листов металла, сварка с зазорами, сварка разных металлов и сплавов. Еще один прорыв – технология TEDAC – это дистанционное управление и контроль за сваркой с горелки.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_5.jpg" alt="">
+            <p class="partners__item-title">Самое важное: качество и инновации.</p>
+            <p class="partners__item-text">Компания была основана в 1954 году, Германия. Традиционно высокое качество Dinse на протяжении уже более 60 лет является основой для развития самых современных сварочных систем и продуктов. Основная продукция: компоненты сварочных систем: источник питания, блок охлаждения, механизм подачи проволоки, функциональный концепт, аксессуары, шланг-пакеты; сварочные инструменты – горелки для ручной и автоматической сварки, аксессуары; системы подачи проволоки – MIG/MAG, TIG/WIG, лазерная сварка.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_6.jpg" alt="">
+            <p class="partners__item-title">Оптимальное соотношение цены и качества.</p>
+            <p class="partners__item-text">«Кедр» предлагает широкий ассортимент аппаратов для сварочных работ, обладающих выносливостью в режиме жесткой эксплуатации при любых погодных условиях, экономичностью, в энергопотреблении и высокой производительностью. Эргономика, функциональность и надежность – основные критерии сварочных инверторов Кедр.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_7.jpg" alt="">
+            <p class="partners__item-title">Оборудование для контактной и точечной сварки.</p>
+            <p class="partners__item-text">Немецкая компания Dalex – крупнейший производитель машин и оборудования для контактной точечной сварки, рельефной сварки, шовной (роликовой) сварки, а также в линейке товаров – роботизированные комплексы для автомобилестроения, подвесные сварочные клещи контактной сварки. Данное оборудование подходит для работ с любыми видами металлов и сплавов, включая цветные металлы, высоколегированную сталь, алюминий, нержавейку и прочее.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_8.jpg" alt="">
+            <p class="partners__item-title">Ведущий поставщик профессионального оборудования.</p>
+            <p class="partners__item-text">Уже более 20 лет компания Aotai является одним из ведущих поставщиков профессионального оборудования для сварки и резки и успешно развивается на рынках Китая и Европы. Компания предлагает более ста моделей сварочных аппаратов различных серий: MMA, TIG, MIG/MAG, SAW, Plasma CUT, оборудование автоматизации и роботизации.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_9.jpg" alt="">
+            <p class="partners__item-title">Гарантия на сварочные аппараты 5 лет. </p>
+            <p class="partners__item-text">Компания ГК «Сварог» совместно с заводом Shenzhen Jasic Technology поставляет на российский рынок инвентарное сварочное оборудование, а также полный спектр необходимых комплектующих, аксессуаров и расходных материалов. Гарантия на профессиональные и бытовые сварочные инверторы – 5 лет. Сорок моделей сварочных аппаратов прошли аттестацию в Национальном Агентстве Контроля Сварки, что подтверждает высокое качество продукции. Для обеспечения качественного сервиса на территории России работают 190 авторизированных сервисных центров.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_10.jpg" alt="">
+            <p class="partners__item-title">Расходные материалы, горелки, резаки от лучшего производителя. </p>
+            <p class="partners__item-text">В оснащенных по последнему слову техники лабораториях инженеры по развитию постоянно работают над улучшением качества продукции. С помощью современных технологий визуализации ионных токов становится возможной разработка лучших горелок, резаков, электроддержателей и компонентов для автоматической сварки. Abicor Binzel продвигает на российский рынок: сварочные горелки MIG/MAG, WIG/TIG, горелки жидкостного охлаждения для ручной и автоматической сварки, плазменные резаки как воздушного, так и жидкостного охлаждения, электрододержатели для ручной дуговой сварки и строгачи канавок для строжки графитовым электродом и многое другое.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_11.jpg" alt="">
+            <p class="partners__item-title">Горелки, сопла, наконечники высокого качества – цель достигнута.</p>
+            <p class="partners__item-text">Немецкая компания TBi Industries является специализированным производителем сварочных горелок для всех возможных видов сварочных аппаратов, а также подающих механизмов для полуавтоматической и автоматической сварки. Компания производит широкий спектр горелок и плазменных резаков, горелки для ручной сварки MMA, горелки для полуавтоматической сварки MIG/MAG и TIG/WIG, для сварочных автоматов, в том числе с газовым и водяным охлаждением. Все горелки имеют эргономические рукоятки из качественных металлов: прочные, защищенные от перегибов кабели и газовые шланги, благодаря чему достигается длительный срок службы.</p>
+          </div>
+          <div class="partners__item partners-tab-cont">
+            <img src="img/partners/Logo_large_12.jpg" alt="">
+            <p class="partners__item-title">Расходные материалы для сварочных работ по доступной цене.</p>
+            <p class="partners__item-text">Большинство фирм в Китае поставляют на рынок России качественные сварочные материалы и оборудование по доступной цене. Ассортимент расходных материалов удовлетворяет потребности всех основных направлений сварки: MIG/MAG, TIG/WIG и т.п. Горелки, сопла, наконечники, электроды любого объема будут доставлены до клиента в кротчайшие сроки, по умеренной цене.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider-logos">
+    <div class="container">
+      <h2 class="slider-logos__title">Наши партнеры</h2>
+      <div class="slider-logos__img">
+        <div><img class="slider-logos__item" src="img/partners/Logo_smal_1.jpg" alt="Logo_smal_1"></div>
+        <div><img src="img/partners/Logo_smal_2.jpg" alt="Logo_smal_2"></div>
+        <div><img src="img/partners/Logo_smal_3.jpg" alt="Logo_smal_3"></div>
+        <div><img src="img/partners/Logo_smal_4.jpg" alt="Logo_smal_4"></div>
+        <div><img src="img/partners/Logo_smal_5.jpg" alt="Logo_smal_5"></div>
+        <div><img src="img/partners/Logo_smal_6.jpg" alt="Logo_smal_6"></div>
+        <div><img src="img/partners/Logo_smal_7.jpg" alt="Logo_smal_7"></div>
+        <div><img src="img/partners/Logo_smal_8.jpg" alt="Logo_smal_8"></div>
+        <div><img src="img/partners/Logo_smal_9.jpg" alt="Logo_smal_9"></div>
+        <div><img src="img/partners/Logo_smal_10.jpg" alt="Logo_smal_10"></div>
+        <div><img src="img/partners/Logo_smal_11.jpg" alt="Logo_smal_11"></div>
+        <div><img src="img/partners/Logo_smal_12.jpg" alt="Logo_smal_12"></div>
+      </div>
+      <div class="slider-logos__text">
+        <div>
+          <img src="img/partners/Logo_large_1.jpg" alt="Logo_large_1">
+          <p><span>Оптимальные решения в промышленной сварке</span> для всех популярных видов сварки: MMA, MIG/MAG, TIG, а также аппараты SAW-сварки, контактной сварки, плазморезы и машины автоматической резки. Fubag предлагает новые виды горелок и полный ассортимент универсальных расходных материалов, которые подходят для сварочных горелок большинства производителей. Новые серии: INTIG – новые мощности в серии аргонодуговой сварки, SW/TW – сварка под слоем флюса, INCUT – автоматическая резка металла, TS – аппараты контактной сварки.</p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_2.jpg" alt="Logo_large_1">
+          <p><span>Инновационные технологии в действии:</span> EWM forceArc pulse обеспечивает стабильную по направленности, мощную сварочную дугу с минимальной теплоотдачей и глубоким проваром. Технология идеально подходит для работы с нелегированными, низколегированными и высоколегированными сталями, а также высокопрочным мелкозернистыми сталями. Новинки года: TITAN XQR – индивидуальная конфигурация в зависимости от требований заказчика, TETRIX 230/300 SMART 2.0 PULS – универсальное применение аргонодуговой сварки, TAURUS 400 + DRIVE 4L BASIC – работа в экстремальных условиях.</p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_3.jpg" alt="Logo_large_1">
+          <p><span>Технологии, инновации, развитие.</span>  В текущем году инженеры BLUEWELD расширили функционал своих моделей в работе с алюминием, а также начали оснащать аппараты системой визуализации сварочного процесса WAVE OS – STRAMIG 243 WAVE. Благодаря данной технологии можно отслеживать, анализировать и контролировать производственный процесс, это гарантирует качество и повторяемость выполнения работ. Программы сварки можно настроить согласно индивидуальным потребностям или использовать многочисленные программы, хранящиеся в памяти. К другим новинкам года относятся аппараты: GALAXY 300 SYNERGIC / 400 SYNERGIC – отличное качество сварного шва.</p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_4.jpg" alt="Logo_large_1">
+          <p><span>Сварочное оборудование будущего.</span> Компания Merkle (Германия) ведет свою деятельность с 1964 года. Более полувека ведутся непрерывные разработки и исследования в области электросварки, плазменной сварки, разрабатывается программное обеспечение для более рационального и эффективного управления сварочными процессами. Максимальная универсальность сварочных аппаратов достигнута с помощью технологий DeepArc: многократное увеличение скорости сварки, концентрированный прогрев, глубокий провар шва, отсутствие брызг и ColdMIG: существенное снижение теплоотдачи, сварка тонких листов металла, сварка с зазорами, сварка разных металлов и сплавов. Еще один прорыв – технология TEDAC – это дистанционное управление и контроль за сваркой с горелки.</p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_5.jpg" alt="Logo_large_1">
+          <p><span>Самое важное: качество и инновации.</span> Компания была основана в 1954 году, Германия. Традиционно высокое качество Dinse на протяжении уже более 60 лет является основой для развития самых современных сварочных систем и продуктов. Основная продукция: компоненты сварочных систем: источник питания, блок охлаждения, механизм подачи проволоки, функциональный концепт, аксессуары, шланг-пакеты; сварочные инструменты – горелки для ручной и автоматической сварки, аксессуары; системы подачи проволоки – MIG/MAG, TIG/WIG, лазерная сварка.</p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_6.jpg" alt="Logo_large_1">
+          <p><span>Оптимальное соотношение цены и качества.</span> «Кедр» предлагает широкий ассортимент аппаратов для сварочных работ, обладающих выносливостью в режиме жесткой эксплуатации при любых погодных условиях, экономичностью, в энергопотреблении и высокой производительностью. Эргономика, функциональность и надежность – основные критерии сварочных инверторов Кедр. </p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_7.jpg" alt="Logo_large_1">
+          <p><span>Оборудование для контактной и точечной сварки.</span> Немецкая компания Dalex – крупнейший производитель машин и оборудования для контактной точечной сварки, рельефной сварки, шовной (роликовой) сварки, а также в линейке товаров – роботизированные комплексы для автомобилестроения, подвесные сварочные клещи контактной сварки. Данное оборудование подходит для работ с любыми видами металлов и сплавов, включая цветные металлы, высоколегированную сталь, алюминий, нержавейку и прочее. </p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_8.jpg" alt="Logo_large_1">
+          <p><span>Ведущий поставщик профессионального оборудования.</span> Уже более 20 лет компания Aotai является одним из ведущих поставщиков профессионального оборудования для сварки и резки и успешно развивается на рынках Китая и Европы. Компания предлагает более ста моделей сварочных аппаратов различных серий: MMA, TIG, MIG/MAG, SAW, Plasma CUT, оборудование автоматизации и роботизации.</p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_9.jpg" alt="Logo_large_1">
+          <p><span>Гарантия на сварочные аппараты 5 лет.</span> Компания ГК «Сварог» совместно с заводом Shenzhen Jasic Technology поставляет на российский рынок инвентарное сварочное оборудование, а также полный спектр необходимых комплектующих, аксессуаров и расходных материалов. Гарантия на профессиональные и бытовые сварочные инверторы – 5 лет. Сорок моделей сварочных аппаратов прошли аттестацию в Национальном Агентстве Контроля Сварки, что подтверждает высокое качество продукции. Для обеспечения качественного сервиса на территории России работают 190 авторизированных сервисных центров. </p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_10.jpg" alt="Logo_large_1">
+          <p><span>Расходные материалы, горелки, резаки от лучшего производителя.</span> В оснащенных по последнему слову техники лабораториях инженеры по развитию постоянно работают над улучшением качества продукции. С помощью современных технологий визуализации ионных токов становится возможной разработка лучших горелок, резаков, электроддержателей и компонентов для автоматической сварки. Abicor Binzel продвигает на российский рынок: сварочные горелки MIG/MAG, WIG/TIG, горелки жидкостного охлаждения для ручной и автоматической сварки, плазменные резаки как воздушного, так и жидкостного охлаждения, электрододержатели для ручной дуговой сварки и строгачи канавок для строжки графитовым электродом и многое другое.</p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_11.jpg" alt="Logo_large_1">
+          <p><span>Горелки, сопла, наконечники высокого качества – цель достигнута.</span> Немецкая компания TBi Industries является специализированным производителем сварочных горелок для всех возможных видов сварочных аппаратов, а также подающих механизмов для полуавтоматической и автоматической сварки. Компания производит широкий спектр горелок и плазменных резаков, горелки для ручной сварки MMA, горелки для полуавтоматической сварки MIG/MAG и TIG/WIG, для сварочных автоматов, в том числе с газовым и водяным охлаждением. Все горелки имеют эргономические рукоятки из качественных металлов: прочные, защищенные от перегибов кабели и газовые шланги, благодаря чему достигается длительный срок службы.</p>
+        </div>
+        <div>
+          <img src="img/partners/Logo_large_12.jpg" alt="Logo_large_1">
+          <p><span>Расходные материалы для сварочных работ по доступной цене.</span> Большинство фирм в Китае поставляют на рынок России качественные сварочные материалы и оборудование по доступной цене. Ассортимент расходных материалов удовлетворяет потребности всех основных направлений сварки: MIG/MAG, TIG/WIG и т.п. Горелки, сопла, наконечники, электроды любого объема будут доставлены до клиента в кротчайшие сроки, по умеренной цене.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="map" id="contacts">
+    <div class="map__text">
+      <div class="container map__container">
+        <div class="map__wrap">
+          <h2 class="map__title">КОНТАКТЫ</h2>
+          <p class="map__section">ООО «Металлон Урал»:</p>
+          <p class="map__section-text">8 (800) 775-09-84</p>
+          <p class="map__clarification">Звонок по РФ бесплатный</p>
+          <p class="map__section">Электронный адрес:</p>
+          <p class="map__section-text map__section-margin">svarka@metallon-group.ru</p>
+          <p class="map__section">Адрес головного офиса:</p>
+          <p class="map__section-text map__section-margin">г. Екатеринбург, ул. Маяковского,д. 25, корпус А, БЦ «Основа», 9 этаж</p>
+          <p class="map__section">Часы работы:</p>
+          <p class="map__section-text">ПН-ПТ с 9<sup>00</sup> до 18<sup>00</sup></p>
+        </div>
+      </div>
+    </div>
+    <div class="map__area" id="map"></div>
+  </section>
+  <section class="question" id="question">
+    <div class="container">
+      <form>
+        <h3>ЗАДАТЬ ВОПРОС</h3>
+        <p class="question__name"><label for="check1">Ваше имя</label><br><input class="question__input" type="text" id="check1"></p>
+        <p><label for="check2">Телефон</label><br><input class="question__input" type="text" id="check2"></p>
+        <input class="question__button" type="button" value="ЗАКАЗАТЬ ЗВОНОК">
+        <input class="question__button-desktop" type="button" value="1">
       </form>
     </div>
-    <div class="page-header__img"></div>
-    <div class="page-header__text-block">
-      <div class="page-header__my-life">
-        <p>my life</p>
-      </div>
-      <h2 class="page-header__title">These Beauty Queens Are Fighting For Transgender Rights</h2>
+  </section>
+  <div class="order1-desktop__overlay"></div>
+  <div class="order1-desktop">
+    <div class="order1-desktop__wrap">
+      <button class="order1-desktop__close"></button>
+      <h2 class="order1-desktop__title">ЗАКАЗАТЬ ОБОРУДОВАНИЕ</h2>
+      <p class="order1-desktop__text">Оставте вашу заявку и наш менеджер свяжется с вами.</p>
+      <p>Если вы не нашли необходимое вам оборудование, просто напишите об этом в коментарии к заявке и мы обязательно найдем, то что вам необходимо, либо предложим самую подходящую альтернативу из нашего ассортимента.</p>
+      <p>Если наш менеджер не перезвонит Вам в течение 10 минут – дополнительная скидка 5% на всю линейку сварочного оборудования!</p>
+      <form>
+        <div class="order1-desktop__container">
+          <div class="order1-desktop__order1">
+            <p class="order1-desktop__name">
+              <label for="check5">Ваше имя</label><br>
+              <input class="order1__input order1-desktop__input" type="text" id="check5">
+            </p>
+            <p>
+              <label for="check6">Телефон</label><br>
+              <input class="order1__input order1-desktop__input" type="text" id="check6">
+            </p>
+            <p>
+              <label for="check3">Электронная почта</label><br>
+              <input class="order1__input order1-desktop__input" type="text" id="check3">
+            </p>
+            <p>
+          </div>
+          <div class="order1-desktop__order2">
+            <label>Модель сварачного аппарат</label><br>
+            <select class="order2_select">
+              <option>Merkle LiteARC 180</option>
+              <option>AOTAI ARC 200</option>
+              <option>PICO 160 CEL PULS EWM</option>
+              <option>ACTIV TIG 227 MV/PFC DC/</option>
+              <option>TECH ARC 205 B (Z203)</option>
+            </select>
+            <p class="order2__clarification order1-desktop__clarification">Если вы пока не выбрали модель, оставьте это поле пустым</p>
+            <p class="order2__load">
+              <label for="check4">Прикрепить файл</label><br>
+              <input class="order1-desktop__submit" type="submit" id="check4">
+            <p class="order2__file order1-desktop__file">Заявка на рассче...ния.pdf<br><span>Размер не должен привышать 25 Мб</span></p>
+          </div>
+        </div>
+        <p class="order2__comment-text">
+          <label>Коментарий</label><br>
+          <textarea class="order2__comment order1-desktop__comment" rows="10" cols="45" name="text"></textarea>
+        </p>
+        <input class="order1-desktop__button" type="button" value="2">
+      </form>
     </div>
-  </header>
-
-
+  </div>
+  <div class="order2-desktop">
+    <div class="order2-desktop__wrap">
+      <button class="order2-desktop__close"></button>
+      <h2 class="order2-desktop__title">СПАСИБО</h2>
+      <p class="order2-desktop__text3">Ваше сообщение успешно отправлено.<br>
+        Наш менеджер свяжется с вами в ближайшее время</p>
+      <p class="order2-desktop__text">Телефон горячей линии:</p>
+      <p class="order2-desktop__text2"><span>8(800) 775-09-85</span></p>
+      <p class="order2-desktop__text">Часы работы главного офиса в Екатеринбурге</p>
+      <p class="order2-desktop__text2"><span>9<sup>00</sup>-18<sup>00</sup></span></p>
+      <button class="order2-desktop__button"></button>
+    </div>
+  </div>
   <script src="js/libs.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="js/common.js"></script>
 </body>
 </html>

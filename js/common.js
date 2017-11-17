@@ -120,6 +120,16 @@ $(function () {
 
     /*Modals
     ========================*/
+    var name = $('#check5'),
+        email = $('#check3'),
+        emailTitle = $('#email'),
+        nameTitle = $('#name'),
+        order1Desk = $('.order1-desktop'),
+        order2Desk = $('.order2-desktop'),
+        overlay = $('.order1-desktop__overlay'),
+        pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i,
+        warning1 = $('.order1__warning1'),
+        warning2 = $('.order1__warning2');
 
     $('.question__button').click(function () {
         window.location = 'thanks.html';
@@ -135,32 +145,58 @@ $(function () {
 
     $('.catalog__item-js').on("click", function() {
         var width = $(window).width();
+        warning1.css('display', 'none');
+        nameTitle.css('color', 'black');
+        name.css('border-color', '#3c3c3b');
+        emailTitle.css('color', 'black');
+        email.css('border-color', '#3c3c3b');
+        warning2.css('display', 'none');
+        name.val('');
+        email.val('');
         if(width < 1263) {
             window.location = 'form.html';
         } else {
-            $('.order1-desktop').fadeIn();
-            $('.order1-desktop__overlay').fadeIn();
+            order1Desk.fadeIn();
+            overlay.fadeIn();
         }
     });
 
     $('.equipment-selection__button').on("click", function() {
-        $('.order1-desktop').fadeIn();
-        $('.order1-desktop__overlay').fadeIn();
+        warning1.css('display', 'none');
+        nameTitle.css('color', 'black');
+        name.css('border-color', '#3c3c3b');
+        emailTitle.css('color', 'black');
+        email.css('border-color', '#3c3c3b');
+        warning2.css('display', 'none');
+        name.val('');
+        email.val('');
+        order1Desk.fadeIn();
+        overlay.fadeIn();
     });
 
     $('.order1-desktop__button').on("click", function() {
-        $('.order1-desktop').fadeOut();
-        $('.order2-desktop').fadeIn();
+        if(name.val().length === 0) {
+            warning1.fadeIn();
+            nameTitle.css('color', '#9c3335');
+            name.css('border-color', '#9c3335');
+        } else if (!pattern.test(email.val())) {
+            emailTitle.css('color', '#9c3335');
+            email.css('border-color', '#9c3335');
+            warning2.fadeIn();
+        } else {
+            order1Desk.fadeOut();
+            order2Desk.fadeIn();
+        }
     });
 
     $('.order1-desktop__close').on("click", function() {
-        $('.order1-desktop').fadeOut();
-        $('.order1-desktop__overlay').fadeOut()
+        order1Desk.fadeOut();
+        overlay.fadeOut()
     });
 
     $('.order2-desktop__close, .order2-desktop__button').on("click", function() {
-        $('.order2-desktop').fadeOut();
-        $('.order1-desktop__overlay').fadeOut()
+        order2Desk.fadeOut();
+        overlay.fadeOut()
     });
 
     $('.order1__button').click(function () {
@@ -169,8 +205,8 @@ $(function () {
     });
 
     $('.question__button-desktop').click(function () {
-        $('.order2-desktop').fadeIn();
-        $('.order1-desktop__overlay').fadeIn();
+        order2Desk.fadeIn();
+        overlay.fadeIn();
     });
 
     $('.order2__button').click(function () {

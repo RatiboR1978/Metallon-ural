@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="order1">
+  <div class="container">
+    <h2>Заказать оборудование</h2>
+    <p class="order1__step">Шаг 1 из 2</p>
+    <p class="order1__communications">Оставте вашу заявку и наш менеджер свяжется с вами.</p>
+    <p class="order1__regulations">Если вы не нашли необходимое вам оборудование, просто напишите об этом в коментарии к заявке и мы обязательно найдем, то что вам необходимо, либо предложим самую подходящую альтернативу из нашего ассортимента.</p>
+    <p class="order1__regulations order1__red">Если наш менеджер не перезвонит Вам в течение 10 минут – дополнительная скидка 5% на всю линейку сварочного оборудования!</p>
+    <form>
+      <p>
+        <label for="check1">Ваше имя</label><br>
+        <input class="order1__input" type="text" id="check1">
+      </p>
+      <p>
+        <label for="check2">Телефон</label><br>
+        <input class="order1__input" type="text" id="check2">
+      </p>
+      <p>
+        <label for="check3">Электронная почта</label><br>
+        <input class="order1__input" type="text" id="check3">
+      </p>
+      <input class="order1__button" type="button" value="ДАЛЕЕ">
+    </form>
+  </div>
+</div>
+  <div class="order2">
+    <div class="container">
+      <h2>Заказать оборудование</h2>
+      <p class="order2__step">Шаг 2 из 2</p>
+      <form>
+        <p class="order2__wrap">
+          <label for="check1">Модель сварачного аппарат</label><br>
+          <select class="order2_select">
+            <option>Merkle LiteARC 180</option>
+            <option>AOTAI ARC 200</option>
+            <option>PICO 160 CEL PULS EWM</option>
+            <option>ACTIV TIG 227 MV/PFC DC/</option>
+            <option>TECH ARC 205 B (Z203)</option>
+          </select>
+        <p class="order2__clarification">Если вы пока не выбрали модель, оставьте это поле пустым</p>
+        </p>
+        <p class="order2__load">
+          <label for="check2">Прикрепить файл</label><br>
+          <input class="order2__submit" type="submit" id="check2">
+        <p class="order2__file">Заявка на рассче...ния.pdf</p>
+        <span>Размер не должен привышать 25 Мб</span>
+        </p>
+        <p class="order2__comment-text">
+          <label for="check3">Коментарий</label><br>
+          <textarea class="order2__comment" rows="10" cols="45" name="text"></textarea>
+        </p>
+        <input class="order2__button" type="button" value="ЗАКАЗАТЬ">
+      </form>
+    </div>
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
