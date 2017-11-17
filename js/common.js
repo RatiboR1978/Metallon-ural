@@ -268,7 +268,7 @@ $(function () {
         var v_email = el_e.val()?false:true;
 
         if ( v_email ) {
-            el_e.after('<div class="text-error for-email">Поле e-mail обязательно к заполнению</div>');
+            el_e.after('<div class="text-error for-email">Пожалуйста, заполните это поле</div>');
             $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
             $("#email").addClass('error');
             $('#emailTitle').addClass('title-error');
