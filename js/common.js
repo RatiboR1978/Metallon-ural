@@ -121,10 +121,6 @@ $(function () {
     /*Modals
     ========================*/
 
-    $('.question__button').click(function () {
-        window.location = 'thanks.html';
-    });
-
     $('.order3__button').click(function () {
         window.location = 'index.html';
     });
@@ -144,9 +140,7 @@ $(function () {
     });
 
     $('.equipment-selection__button').on("click", function() {
-        $('#login').val('');
-        $('#email').val('');
-        $('#phone').val('');
+        $('#login, #email, #phone').val('');
         $('.order1-desktop').fadeIn();
         $('.order1-desktop__overlay').fadeIn();
     });
@@ -162,14 +156,10 @@ $(function () {
     });
 
     $('.order2-desktop__close, .order2-desktop__button').on("click", function() {
+        $("#questionName").val('');
+        $("#questionTel").val('');
         $('.order2-desktop').fadeOut();
         $('.order1-desktop__overlay').fadeOut()
-    });
-
-
-    $('.question__button-desktop').click(function () {
-        $('.order2-desktop').fadeIn();
-        $('.order1-desktop__overlay').fadeIn();
     });
 
     $('.order2__button').click(function () {
@@ -186,7 +176,6 @@ $(function () {
             var tabs = $(".partners-tab-js"),
                 cont = $(".partners-tab-cont");
 
-
             tabs.removeClass("partners__logo--active");
             cont.removeClass("partners__item--active");
             $(this).addClass("partners__logo--active");
@@ -195,6 +184,7 @@ $(function () {
             return false;
         });
     });
+
 
     /*Button - Up
      ========================*/
@@ -221,8 +211,7 @@ $(function () {
     });
 
 
-    /*
-
+    /*Validation
      ===============================*/
 
     $('#closeForm').on("click", function() {
@@ -231,9 +220,61 @@ $(function () {
         $('#loginTitle, #emailTitle, #phoneTitle').removeClass('title-error');
     });
 
+    function validateForm(name, email, phone, nameTitle, emailTitle, phoneTitle) {
+        $(".text-error").remove();
+        name.removeClass('error');
+        email.removeClass('error');
+        phone.removeClass('error');
+        nameTitle.removeClass('title-error');
+        emailTitle.removeClass('title-error');
+        phoneTitle.removeClass('title-error');
+
+        // Проверка логина
+        var el_l    = name;
+        if ( el_l.val().length === 0 ) {
+            var v_login = true;
+            el_l.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
+            $(".for-login").css({top: el_l.position().top + el_l.outerHeight() + 2});
+            name.addClass('error');
+            nameTitle.addClass('title-error');
+        }
+
+        // Проверка e-mail
+
+        var reg     = /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.([a-z]{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/i;
+        var el_e    = email;
+        var v_email = el_e.val()?false:true;
+
+        if ( v_email ) {
+            el_e.after('<div class="text-error for-email">Пожалуйста, заполните это поле</div>');
+            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
+            email.addClass('error');
+            emailTitle.addClass('title-error');
+        } else if ( !reg.test( el_e.val() ) ) {
+            v_email = true;
+            el_e.after('<div class="text-error for-email">Проверьте правильность заполнения поля</div>');
+            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
+            email.addClass('error');
+            emailTitle.addClass('title-error');
+        }
+
+        // Проверка телефона
+
+        var el_p    = phone;
+        if ( el_p.val().length === 0 ) {
+            var v_phone = true;
+            el_p.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
+            $(".for-login").css({top: el_p.position().top + el_p.outerHeight() + 2});
+            phone.addClass('error');
+            phoneTitle.addClass('title-error');
+        }
+
+
+        return ( v_login || v_email || v_phone);
+    }
 
     $('.order1-desktop__button').on('click', function(event) {
-        if ( validateForm() ) { // если есть ошибки возвращает true
+        if ( validateForm($('#login'), $('#email'), $('#phone'), $('#loginTitle'), $('#emailTitle'), $('#phoneTitle')) ) { // если есть ошибки возвращает true
             event.preventDefault();
         } else {
             $('.order1-desktop').fadeOut();
@@ -241,58 +282,8 @@ $(function () {
         }
     });
 
-    function validateForm() {
-        $(".text-error").remove();
-        $("#login, #email, #phone").removeClass('error');
-        $('#loginTitle, #emailTitle, #phoneTitle').removeClass('title-error');
-
-        // Проверка логина
-        var el_l    = $("#login");
-        if ( el_l.val().length === 0 ) {
-            var v_login = true;
-            el_l.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
-            $(".for-login").css({top: el_l.position().top + el_l.outerHeight() + 2});
-            $("#login").addClass('error');
-            $('#loginTitle').addClass('title-error');
-        }
-
-
-        // Проверка e-mail
-
-        var reg     = /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.([a-z]{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/i;
-        var el_e    = $("#email");
-        var v_email = el_e.val()?false:true;
-
-        if ( v_email ) {
-            el_e.after('<div class="text-error for-email">Пожалуйста, заполните это поле</div>');
-            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
-            $("#email").addClass('error');
-            $('#emailTitle').addClass('title-error');
-        } else if ( !reg.test( el_e.val() ) ) {
-            v_email = true;
-            el_e.after('<div class="text-error for-email">Проверьте правильность заполнения поля</div>');
-            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
-            $("#email").addClass('error');
-            $('#emailTitle').addClass('title-error');
-        }
-
-        // Проверка телефона
-
-        var el_p    = $("#phone");
-        if ( el_p.val().length === 0 ) {
-            var v_phone = true;
-            el_p.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
-            $(".for-login").css({top: el_p.position().top + el_p.outerHeight() + 2});
-            $("#phone").addClass('error');
-            $('#phoneTitle').addClass('title-error');
-        }
-
-
-        return ( v_login || v_email || v_phone);
-    }
-
     $('.order1__button').click(function () {
-        if ( validateFormMob() ) { // если есть ошибки возвращает true
+        if ( validateForm($("#loginMob"), $("#emailMob"), $("#phoneMob"), $("#loginMobTitle"), $("#emailMobTitle"), $("#phoneMobTitle")) ) { // если есть ошибки возвращает true
             event.preventDefault();
         } else {
             $('.order1').fadeOut();
@@ -300,55 +291,66 @@ $(function () {
         }
     });
 
-    function validateFormMob() {
-        $(".text-error").remove();
-        $("#loginMob, #emailMob, #phoneMob").removeClass('error');
-        $('#loginMobTitle, #emailMobTitle, #phoneMobTitle').removeClass('title-error');
 
-        // Проверка логина
-        var el_l    = $("#loginMob");
+    $('.question__button-desktop').click(function () {
+        if ( validateFormQuestion($("#questionName"), $("#questionTel")) ) { // если есть ошибки возвращает true
+            event.preventDefault();
+        } else {
+            $('.order2-desktop').fadeIn();
+            $('.order1-desktop__overlay').fadeIn();
+        }
+    });
+
+    $('.question__button').click(function () {
+        if ( validateFormQuestion($("#questionName"), $("#questionTel")) ) {
+            event.preventDefault();
+        } else {
+            window.location = 'thanks.html';
+        }
+    });
+
+    function validateFormQuestion(name, phone) {
+        $(".text-error").remove();
+        name.removeClass('error');
+        phone.removeClass('error');
+
+
+        // Проверка имени
+        var el_l    = name;
         if ( el_l.val().length === 0 ) {
             var v_login = true;
             el_l.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
             $(".for-login").css({top: el_l.position().top + el_l.outerHeight() + 2});
-            $("#loginMob").addClass('error');
-            $('#loginMobTitle').addClass('title-error');
-        }
-
-
-        // Проверка e-mail
-
-        var reg     = /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.([a-z]{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/i;
-        var el_e    = $("#emailMob");
-        var v_email = el_e.val()?false:true;
-
-        if ( v_email ) {
-            el_e.after('<div class="text-error for-email">Пожалуйста, заполните это поле</div>');
-            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
-            $("#emailMob").addClass('error');
-            $('#emailMobTitle').addClass('title-error');
-        } else if ( !reg.test( el_e.val() ) ) {
-            v_email = true;
-            el_e.after('<div class="text-error for-email">Проверьте правильность заполнения поля</div>');
-            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
-            $("#emailMob").addClass('error');
-            $('#emailMobTitle').addClass('title-error');
+            name.addClass('error');
         }
 
         // Проверка телефона
 
-        var el_p    = $("#phoneMob");
+        var el_p    = phone;
         if ( el_p.val().length === 0 ) {
             var v_phone = true;
             el_p.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
             $(".for-login").css({top: el_p.position().top + el_p.outerHeight() + 2});
-            $("#phoneMob").addClass('error');
-            $('#phoneMobTitle').addClass('title-error');
+            phone.addClass('error');
         }
 
-
-        return ( v_login || v_email || v_phone);
+        return ( v_login || v_phone);
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1780,21 +1780,22 @@ input[type='submit'].styler[disabled] {
       border-bottom: 5px solid #9a3335;
       border-top: 5px solid #9a3335; } }
 
-@media (min-width: 1280px) {
-  .about__phrase-wrap {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: relative; } }
+.about__phrase-wrap {
+  position: relative; }
+  @media (min-width: 1280px) {
+    .about__phrase-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .about__phrase-text {
   font-family: PTSans-Italic, Arial, sans-serif;
