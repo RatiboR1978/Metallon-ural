@@ -166,10 +166,6 @@ $(function () {
         $('.order1-desktop__overlay').fadeOut()
     });
 
-    $('.order1__button').click(function () {
-        $('.order1').fadeOut();
-        $('.order2').fadeIn();
-    });
 
     $('.question__button-desktop').click(function () {
         $('.order2-desktop').fadeIn();
@@ -280,6 +276,8 @@ $(function () {
             $('#emailTitle').addClass('title-error');
         }
 
+        // Проверка телефона
+
         var el_p    = $("#phone");
         if ( el_p.val().length === 0 ) {
             var v_phone = true;
@@ -293,7 +291,64 @@ $(function () {
         return ( v_login || v_email || v_phone);
     }
 
+    $('.order1__button').click(function () {
+        if ( validateFormMob() ) { // если есть ошибки возвращает true
+            event.preventDefault();
+        } else {
+            $('.order1').fadeOut();
+            $('.order2').fadeIn();
+        }
+    });
 
+    function validateFormMob() {
+        $(".text-error").remove();
+        $("#loginMob, #emailMob, #phoneMob").removeClass('error');
+        $('#loginMobTitle, #emailMobTitle, #phoneMobTitle').removeClass('title-error');
+
+        // Проверка логина
+        var el_l    = $("#loginMob");
+        if ( el_l.val().length === 0 ) {
+            var v_login = true;
+            el_l.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
+            $(".for-login").css({top: el_l.position().top + el_l.outerHeight() + 2});
+            $("#loginMob").addClass('error');
+            $('#loginMobTitle').addClass('title-error');
+        }
+
+
+        // Проверка e-mail
+
+        var reg     = /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.([a-z]{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/i;
+        var el_e    = $("#emailMob");
+        var v_email = el_e.val()?false:true;
+
+        if ( v_email ) {
+            el_e.after('<div class="text-error for-email">Пожалуйста, заполните это поле</div>');
+            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
+            $("#emailMob").addClass('error');
+            $('#emailMobTitle').addClass('title-error');
+        } else if ( !reg.test( el_e.val() ) ) {
+            v_email = true;
+            el_e.after('<div class="text-error for-email">Проверьте правильность заполнения поля</div>');
+            $(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
+            $("#emailMob").addClass('error');
+            $('#emailMobTitle').addClass('title-error');
+        }
+
+        // Проверка телефона
+
+        var el_p    = $("#phoneMob");
+        if ( el_p.val().length === 0 ) {
+            var v_phone = true;
+            el_p.after('<div class="text-error for-login">Пожалуйста, заполните это поле</div>');
+            $(".for-login").css({top: el_p.position().top + el_p.outerHeight() + 2});
+            $("#phoneMob").addClass('error');
+            $('#phoneMobTitle').addClass('title-error');
+        }
+
+
+        return ( v_login || v_email || v_phone);
+    }
 
 
 

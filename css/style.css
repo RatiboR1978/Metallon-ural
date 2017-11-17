@@ -2395,6 +2395,7 @@ input[type='submit'].styler[disabled] {
     text-align: center; }
   .order1 label {
     display: block;
+    padding-left: 10px;
     font-family: PTSans-Bold, Arial, sans-serif;
     font-size: 12px; }
 
@@ -2406,7 +2407,9 @@ input[type='submit'].styler[disabled] {
   outline: none;
   height: 33px;
   padding-left: 10px;
-  font-size: 12px; }
+  font-size: 12px;
+  display: block;
+  margin: 0 auto 10px; }
 
 .order1__step {
   font-size: 12px;
@@ -2672,7 +2675,14 @@ input[type='submit'].styler[disabled] {
 
 .text-error {
   color: #9c3335;
-  font-size: 14px; }
+  font-size: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px; }
+  @media (min-width: 1280px) {
+    .text-error {
+      font-size: 14px;
+      margin-left: 0;
+      margin-bottom: 0; } }
 
 .title-error {
   color: #9c3335; }

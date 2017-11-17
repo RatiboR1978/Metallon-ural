@@ -15,6 +15,7 @@
   }
   label {
     display: block;
+    padding-left: 10px;
     font-family: PTSans-Bold, Arial, sans-serif;
     font-size: 12px;
   }
@@ -28,6 +29,8 @@
   height: 33px;
   padding-left: 10px;
   font-size: 12px;
+  display: block;
+  margin: 0 auto 10px;
 }
 
 .order1__step {
