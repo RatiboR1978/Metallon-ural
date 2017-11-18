@@ -2389,7 +2389,7 @@ input[type='submit'].styler[disabled] {
 /*Order1
 ========================*/
 .order1 {
-  padding: 32px 29px;
+  padding: 10px 29px 172px;
   position: fixed;
   top: 15px;
   left: 50%;
@@ -2449,7 +2449,7 @@ input[type='submit'].styler[disabled] {
 /*Order2
 ========================*/
 .order2 {
-  padding: 32px 29px;
+  padding: 10px 29px 172px;
   position: fixed;
   top: 15px;
   left: 50%;
@@ -2533,7 +2533,7 @@ input[type='submit'].styler[disabled] {
 /*Order3
 ========================*/
 .order3 {
-  padding: 32px 30px;
+  padding: 10px 29px 172px;
   font-family: PtSerifCaption, Arial, sans-serif;
   font-size: 10px;
   position: fixed;
