@@ -153,7 +153,8 @@
   }
 }
 
-.catalog__item3-image {
+.catalog__item3-image,
+.catalog__item7-image {
   border: 1px solid black;
   padding: 10px 0 70px 0;
   border-radius: 10px;
@@ -167,6 +168,7 @@
 .catalog__item1-image,
 .catalog__item2-image,
 .catalog__item3-image,
+.catalog__item7-image,
 .catalog__item4-image {
   margin-bottom: 15px;
   @media (min-width: 1280px) {
@@ -176,6 +178,7 @@
 
 .catalog__item1-image:hover,
 .catalog__item2-image:hover,
+.catalog__item7-image:hover,
 .catalog__item3-image:hover,
 .catalog__item4-image:hover {
   margin: -2px -2px 13px -2px;

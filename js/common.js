@@ -115,11 +115,15 @@ $(function () {
     /*Select http://dimox.name/jquery-form-styler/
      ========================*/
 
-    $('select').styler();
+    $('.order2_select, .order2_select2, .order2_select-mob1, .order2_select-mob2').styler();
     $('.placeholder').html('');
 
     /*Modals
     ========================*/
+
+    var order1Desktop = $('.order1-desktop'),
+        overlay1Desktop = $('.order1-desktop__overlay'),
+        order2Desktop = $('.order2-desktop');
 
     $('.order3__button').click(function () {
         window.location = 'index.html';
@@ -134,32 +138,27 @@ $(function () {
         if(width < 1263) {
             window.location = 'form.html';
         } else {
-            $('.order1-desktop').fadeIn();
-            $('.order1-desktop__overlay').fadeIn();
+            order1Desktop.fadeIn();
+            overlay1Desktop.fadeIn();
         }
     });
 
     $('.equipment-selection__button').on("click", function() {
         $('#login, #email, #phone').val('');
-        $('.order1-desktop').fadeIn();
-        $('.order1-desktop__overlay').fadeIn();
+        order1Desktop.fadeIn();
+        overlay1Desktop.fadeIn();
     });
 
-    /*$('.order1-desktop__button').on("click", function() {
-        $('.order1-desktop').fadeOut();
-        $('.order2-desktop').fadeIn();
-    });*/
-
     $('.order1-desktop__close').on("click", function() {
-        $('.order1-desktop').fadeOut();
-        $('.order1-desktop__overlay').fadeOut()
+        order1Desktop.fadeOut();
+        overlay1Desktop.fadeOut()
     });
 
     $('.order2-desktop__close, .order2-desktop__button').on("click", function() {
         $("#questionName").val('');
         $("#questionTel").val('');
-        $('.order2-desktop').fadeOut();
-        $('.order1-desktop__overlay').fadeOut()
+        order2Desktop.fadeOut();
+        overlay1Desktop.fadeOut()
     });
 
     $('.order2__button').click(function () {
@@ -277,8 +276,8 @@ $(function () {
         if ( validateForm($('#login'), $('#email'), $('#phone'), $('#loginTitle'), $('#emailTitle'), $('#phoneTitle')) ) { // если есть ошибки возвращает true
             event.preventDefault();
         } else {
-            $('.order1-desktop').fadeOut();
-            $('.order2-desktop').fadeIn();
+            order1Desktop.fadeOut();
+            order2Desktop.fadeIn();
         }
     });
 
@@ -286,8 +285,31 @@ $(function () {
         if ( validateForm($("#loginMob"), $("#emailMob"), $("#phoneMob"), $("#loginMobTitle"), $("#emailMobTitle"), $("#phoneMobTitle")) ) { // если есть ошибки возвращает true
             event.preventDefault();
         } else {
+            var value = localStorage.getItem('key');
+            if(value === '1') {
+                $('.order2_select-mob1').css('display', 'block')
+            }
+            if(value === '2') {
+                $('.order2_select-mob2').css('display', 'block')
+            }
+            if(value === '3') {
+                $('.order2_select-mob3').css('display', 'block')
+            }
+            if(value === '4') {
+                $('.order2_select-mob4').css('display', 'block')
+            }
+            if(value === '5') {
+                $('.order2_select-mob5').css('display', 'block')
+            }
+            if(value === '6') {
+                $('.order2_select-mob6').css('display', 'block')
+            }
+            if(value === '7') {
+                $('.order2_select-mob7').css('display', 'block')
+            }
             $('.order1').fadeOut();
             $('.order2').fadeIn();
+            localStorage.clear()
         }
     });
 
@@ -296,8 +318,8 @@ $(function () {
         if ( validateFormQuestion($("#questionName"), $("#questionTel")) ) { // если есть ошибки возвращает true
             event.preventDefault();
         } else {
-            $('.order2-desktop').fadeIn();
-            $('.order1-desktop__overlay').fadeIn();
+            order2Desktop.fadeIn();
+            overlay1Desktop.fadeIn();
         }
     });
 
@@ -337,6 +359,71 @@ $(function () {
         return ( v_login || v_phone);
     }
 
+    var box1 = $('.catalog__item1-image'),
+        select = $('.order2_select');
+
+    box1.click(function() {
+        localStorage.setItem('key', '1');
+        select.css('display', 'none');
+        $('.order2_select1').css('display', 'block');
+    });
+
+    var box2 = $('.catalog__item2-image');
+    box2.click(function() {
+        localStorage.setItem('key', '2');
+        select.css('display', 'none');
+        $('.order2_select2').css('display', 'block');
+    });
+
+    var box3 = $('.catalog__item3-image');
+    box3.click(function() {
+        localStorage.setItem('key', '3');
+        select.css('display', 'none');
+        $('.order2_select3').css('display', 'block');
+    });
+
+    var box4 = $('.catalog__item4-image');
+    box4.click(function() {
+        localStorage.setItem('key', '4');
+        select.css('display', 'none');
+        $('.order2_select4').css('display', 'block');
+    });
+
+    var box5 = $('.catalog__item7-image');
+    box5.click(function() {
+        localStorage.setItem('key', '5');
+        select.css('display', 'none');
+        $('.order2_select5').css('display', 'block');
+    });
+
+    var box6 = $('.catalog__item5-button');
+    box6.click(function() {
+        order1Desktop.fadeIn();
+        overlay1Desktop.fadeIn();
+        localStorage.setItem('key', '6');
+        select.css('display', 'none');
+        $('.order2_select6').css('display', 'block');
+    });
+
+    var box7 = $('.catalog__item6-button');
+    box7.click(function() {
+        order1Desktop.fadeIn();
+        overlay1Desktop.fadeIn();
+        localStorage.setItem('key', '7');
+        select.css('display', 'none');
+        $('.order2_select7').css('display', 'block');
+    });
+
+
+    $('.catalog__item5-button-mob').on("click", function() {
+        window.location = 'form.html';
+        localStorage.setItem('key', '6');
+    });
+
+    $('.catalog__item6-button-mob').on("click", function() {
+        window.location = 'form.html';
+        localStorage.setItem('key', '7');
+    });
 
 
 
@@ -396,3 +483,43 @@ function init(){
 
     myMap.geoObjects.add(myPlacemark);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
