@@ -2396,7 +2396,8 @@ input[type='submit'].styler[disabled] {
   margin-left: -171px;
   z-index: 999;
   background-color: #fff;
-  display: block; }
+  display: block;
+  min-height: 700px; }
   .order1 h2 {
     text-align: center; }
   .order1 label {
@@ -2456,7 +2457,8 @@ input[type='submit'].styler[disabled] {
   margin-left: -171px;
   z-index: 999;
   background-color: #fff;
-  display: none; }
+  display: none;
+  min-height: 700px; }
   .order2 h2 {
     text-align: center; }
   .order2 label {
