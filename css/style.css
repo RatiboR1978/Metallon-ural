@@ -2390,14 +2390,9 @@ input[type='submit'].styler[disabled] {
 ========================*/
 .order1 {
   padding: 10px 29px 172px;
-  position: fixed;
-  top: 15px;
-  left: 50%;
-  margin-left: -171px;
-  z-index: 999;
+  margin: 0 auto;
   background-color: #fff;
-  display: block;
-  min-height: 700px; }
+  display: block; }
   .order1 h2 {
     text-align: center; }
   .order1 label {
@@ -2451,14 +2446,8 @@ input[type='submit'].styler[disabled] {
 ========================*/
 .order2 {
   padding: 10px 29px 172px;
-  position: fixed;
-  top: 15px;
-  left: 50%;
-  margin-left: -171px;
-  z-index: 999;
-  background-color: #fff;
-  display: none;
-  min-height: 700px; }
+  margin: 0 auto;
+  display: none; }
   .order2 h2 {
     text-align: center; }
   .order2 label {
@@ -2538,11 +2527,7 @@ input[type='submit'].styler[disabled] {
   padding: 10px 29px 172px;
   font-family: PtSerifCaption, Arial, sans-serif;
   font-size: 10px;
-  position: fixed;
-  top: 15px;
-  left: 50%;
-  margin-left: -171px;
-  z-index: 999;
+  margin: 0 auto;
   background-color: #fff; }
   .order3 h2 {
     text-align: center;
