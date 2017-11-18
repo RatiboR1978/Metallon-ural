@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
 
     /*Slider http://kenwheeler.github.io/slick/
      ========================*/
@@ -43,6 +43,8 @@ $(function () {
             $(".slick-center img").addClass("slider-logos__item");
         }
     });
+
+    $('.slider__list img').css('opacity', '1');
 
 
     /*Catalog - tabs - mobile

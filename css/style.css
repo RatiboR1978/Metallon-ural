@@ -1286,6 +1286,18 @@ input[type='submit'].styler[disabled] {
     margin: 0 auto;
     border-bottom: 12px solid #9a3335; } }
 
+.middle__slider_item {
+  display: none; }
+
+.middle__slider_item:first-child {
+  display: block; }
+
+.slick-initialized .middle__slider_item {
+  display: block; }
+
+.slider__list img {
+  opacity: 0; }
+
 /*Equipment-selection
 ========================*/
 .equipment-selection {

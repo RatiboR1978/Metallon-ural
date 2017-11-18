@@ -15,3 +15,19 @@
     border-bottom: 12px solid #9a3335;
   }
 }
+
+.middle__slider_item {
+  display: none ;
+}
+
+.middle__slider_item:first-child {
+  display: block ;
+}
+
+.slick-initialized .middle__slider_item {
+  display: block ;
+}
+
+.slider__list img{
+  opacity: 0;
+}
