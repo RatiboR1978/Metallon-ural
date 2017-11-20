@@ -1717,7 +1717,9 @@ input[type='submit'].styler[disabled] {
     padding: 94px 25px 14px; } }
 
 .catalog__list {
-  position: relative; }
+  position: relative;
+  padding-right: 12px;
+  padding-left: 11px; }
 
 .catalog__menu-wrap-mob:after {
   position: absolute;
@@ -2568,6 +2570,10 @@ input[type='submit'].styler[disabled] {
   -webkit-border-radius: 2px;
           border-radius: 2px; }
 
+#order2__text {
+  margin: 0;
+  font-size: 10px; }
+
 /*Order3
 ========================*/
 .order3 {
@@ -2733,6 +2739,9 @@ input[type='submit'].styler[disabled] {
 
 .order1-desktop__order1-item {
   margin-bottom: 18px; }
+
+#order1__model {
+  margin-top: 6px; }
 
 /*order2-desktop
 ========================*/

@@ -81,7 +81,7 @@
       <div class="container">
         <div class="catalog__menu-wrap-mob" id="wr-tabs">
           <ul class="catalog__list">
-            <li class="catalog__list-item tab">'</li>
+
             <li class="catalog__list-item catalog__list-item--active tab">MMA</li>
             <li class="catalog__list-item tab">MIG/MAG</li>
             <li class="catalog__list-item tab">TIG</li>
@@ -89,7 +89,7 @@
             <li class="catalog__list-item tab">Автоматическая</li>
             <li class="catalog__list-item tab">Расходные материалы</li>
             <li class="catalog__list-item tab">Горелки</li>
-            <li class="catalog__list-item tab">'</li>
+
           </ul>
         </div>
       </div>
@@ -406,7 +406,7 @@
         </div>
       </div>
       <div class="catalog__item5 catalog__item tab-cont">
-        <h2>расходные материалы</h2>
+        <h2 id="catalog__title1">Расходные материалы</h2>
         <p class="catalog__item3-description">Все расходные материалы в наличии.</p>
         <ul class="catalog__item5-list">
           <li class="catalog__item5-item">наконечники</li>
@@ -420,12 +420,12 @@
           <li class="catalog__item5-item">керамические сопла</li>
         </ul>
         <button class="catalog__item5-button-mob">Купить</button>
-        <button class="catalog__item5-button"></button>
+        <button class="catalog__item5-button" id="catalog__consumables"></button>
       </div>
       <div class="catalog__item6 catalog__item tab-cont">
-        <h2>Горелки</h2>
+        <h2 id="catalog__title2">Горелки</h2>
         <button class="catalog__item6-button-mob">Купить</button>
-        <button class="catalog__item6-button"></button>
+        <button class="catalog__item6-button" id="catalog__burner"></button>
       </div>
     </div>
   </section>
@@ -810,8 +810,9 @@
             </div>
           </div>
           <div class="order1-desktop__order2">
-            <label>Модель сварачного аппарат</label><br>
-            <select class="order2_select order2_select1">
+            <label>Модель сварачного аппарата</label><br>
+            <p id="order1__model"></p>
+            <!--<select class="order2_select order2_select1" id="select1">
               <option>Merkle LiteARC 180</option>
               <option>AOTAI ARC 200</option>
               <option>PICO 160 CEL PULS EWM</option>
@@ -854,7 +855,7 @@
             <select class="order2_select order2_select7">
               <option>ГОРЕЛКИ</option>
             </select>
-            <p class="order2__clarification order1-desktop__clarification">Если вы пока не выбрали модель, оставьте это поле пустым</p>
+            <p class="order2__clarification order1-desktop__clarification">Если вы пока не выбрали модель, оставьте это поле пустым</p>-->
             <p class="order2__load">
               <label for="check4">Прикрепить файл</label><br>
               <input class="order1-desktop__submit" type="submit" id="check4">

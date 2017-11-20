@@ -288,7 +288,9 @@ $(document).ready(function () {
             event.preventDefault();
         } else {
             var value = localStorage.getItem('key');
-            if(value === '1') {
+            console.log(value)
+            $('#order2__text').html(value);
+            /*if(value === '1') {
                 $('.order2_select-mob1').css('display', 'block')
             }
             if(value === '2') {
@@ -308,7 +310,7 @@ $(document).ready(function () {
             }
             if(value === '7') {
                 $('.order2_select-mob7').css('display', 'block')
-            }
+            }*/
             $('.order1').fadeOut();
             $('.order2').fadeIn();
             localStorage.clear()
@@ -361,8 +363,20 @@ $(document).ready(function () {
         return ( v_login || v_phone);
     }
 
-    var box1 = $('.catalog__item1-image'),
+
+    /*Selection of the desired select
+     ===============================*/
+
+    /*var box1 = $('.catalog__item1-image'),
         select = $('.order2_select');
+
+    box1.click(function() {
+        var h3 = $(this).find('h3');
+        $('order2__text').html($(h3).html());
+        localStorage.setItem('key', '' + $(h3).html());
+    });
+
+
 
     box1.click(function() {
         localStorage.setItem('key', '1');
@@ -425,17 +439,40 @@ $(document).ready(function () {
     $('.catalog__item6-button-mob').on("click", function() {
         window.location = 'form.html';
         localStorage.setItem('key', '7');
+    });*/
+
+    /*Choosing the right equipment
+     ===============================*/
+
+    var select1 = $('.select1'),
+        item = $('.catalog__item-js');
+
+
+    item.click(function() {
+        var h3 = $(this).find('h3');
+        localStorage.setItem('key', '' + $(h3).html());
+        if ($(h3).html().length > 0) {
+            $('#order1__model').html($(h3).html());
+        }
     });
 
+    $('#catalog__consumables').click(function () {
+        $('#order1__model').html($('#catalog__title1').html());
+    });
 
+    $('#catalog__burner').click(function () {
+        $('#order1__model').html($('#catalog__title2').html());
+    });
 
+    $('.catalog__item5-button-mob').on("click", function() {
+        window.location = 'form.html';
+        localStorage.setItem('key', '' + $('#catalog__title1').html());
+    });
 
-
-
-
-
-
-
+    $('.catalog__item6-button-mob').on("click", function() {
+        window.location = 'form.html';
+        localStorage.setItem('key', '' + $('#catalog__title2').html());
+    });
 
 
 
