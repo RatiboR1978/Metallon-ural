@@ -21,7 +21,6 @@
 }
 
 .order2_select {
-  display: none;
   outline: none;
   width: 280px;
   height: 36px;
@@ -34,6 +33,7 @@
 
 .order2__wrap {
   margin-bottom: 0;
+  display: none;
 }
 
 .order2__submit {

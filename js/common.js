@@ -133,6 +133,7 @@ $(document).ready(function () {
 
     $('.equipment-selection__button-mob').on("click", function() {
         window.location = 'form.html';
+        localStorage.setItem('key', '1');
     });
 
     $('.catalog__item-js').on("click", function() {
@@ -149,6 +150,8 @@ $(document).ready(function () {
         $('#login, #email, #phone').val('');
         order1Desktop.fadeIn();
         overlay1Desktop.fadeIn();
+        $('.order2_select').css('display', 'block');
+        $('#order1__model').css('display', 'none');
     });
 
     $('.order1-desktop__close').on("click", function() {
@@ -164,6 +167,7 @@ $(document).ready(function () {
     });
 
     $('.order2__button').click(function () {
+        $('.order2__wrap').css('display', 'none');
         window.location = 'thanks.html';
     });
 
@@ -288,8 +292,11 @@ $(document).ready(function () {
             event.preventDefault();
         } else {
             var value = localStorage.getItem('key');
-            console.log(value)
-            $('#order2__text').html(value);
+            if(value === '1') {
+                $('.order2__wrap').css('display', 'block')
+            } else {
+                $('#order2__text').html(value);
+            }
             /*if(value === '1') {
                 $('.order2_select-mob1').css('display', 'block')
             }
@@ -451,6 +458,8 @@ $(document).ready(function () {
     item.click(function() {
         var h3 = $(this).find('h3');
         localStorage.setItem('key', '' + $(h3).html());
+        $('#order1__model').css('display', 'block');
+        $('.order2_select').css('display', 'none');
         if ($(h3).html().length > 0) {
             $('#order1__model').html($(h3).html());
         }
@@ -460,12 +469,16 @@ $(document).ready(function () {
         $('#order1__model').html($('#catalog__title1').html());
         order1Desktop.fadeIn();
         overlay1Desktop.fadeIn();
+        $('#order1__model').css('display', 'block');
+        $('.order2_select').css('display', 'none');
     });
 
     $('#catalog__burner').click(function () {
         $('#order1__model').html($('#catalog__title2').html());
         order1Desktop.fadeIn();
         overlay1Desktop.fadeIn();
+        $('#order1__model').css('display', 'block');
+        $('.order2_select').css('display', 'none');
     });
 
     $('.catalog__item5-button-mob').on("click", function() {
