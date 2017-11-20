@@ -458,10 +458,14 @@ $(document).ready(function () {
 
     $('#catalog__consumables').click(function () {
         $('#order1__model').html($('#catalog__title1').html());
+        order1Desktop.fadeIn();
+        overlay1Desktop.fadeIn();
     });
 
     $('#catalog__burner').click(function () {
         $('#order1__model').html($('#catalog__title2').html());
+        order1Desktop.fadeIn();
+        overlay1Desktop.fadeIn();
     });
 
     $('.catalog__item5-button-mob').on("click", function() {
