@@ -297,27 +297,6 @@ $(document).ready(function () {
             } else {
                 $('#order2__text').html(value);
             }
-            /*if(value === '1') {
-                $('.order2_select-mob1').css('display', 'block')
-            }
-            if(value === '2') {
-                $('.order2_select-mob2').css('display', 'block')
-            }
-            if(value === '3') {
-                $('.order2_select-mob3').css('display', 'block')
-            }
-            if(value === '4') {
-                $('.order2_select-mob4').css('display', 'block')
-            }
-            if(value === '5') {
-                $('.order2_select-mob5').css('display', 'block')
-            }
-            if(value === '6') {
-                $('.order2_select-mob6').css('display', 'block')
-            }
-            if(value === '7') {
-                $('.order2_select-mob7').css('display', 'block')
-            }*/
             $('.order1').fadeOut();
             $('.order2').fadeIn();
             localStorage.clear()
@@ -371,83 +350,6 @@ $(document).ready(function () {
     }
 
 
-    /*Selection of the desired select
-     ===============================*/
-
-    /*var box1 = $('.catalog__item1-image'),
-        select = $('.order2_select');
-
-    box1.click(function() {
-        var h3 = $(this).find('h3');
-        $('order2__text').html($(h3).html());
-        localStorage.setItem('key', '' + $(h3).html());
-    });
-
-
-
-    box1.click(function() {
-        localStorage.setItem('key', '1');
-        select.css('display', 'none');
-        $('.order2_select1').css('display', 'block');
-    });
-
-    var box2 = $('.catalog__item2-image');
-    box2.click(function() {
-        localStorage.setItem('key', '2');
-        select.css('display', 'none');
-        $('.order2_select2').css('display', 'block');
-    });
-
-    var box3 = $('.catalog__item3-image');
-    box3.click(function() {
-        localStorage.setItem('key', '3');
-        select.css('display', 'none');
-        $('.order2_select3').css('display', 'block');
-    });
-
-    var box4 = $('.catalog__item4-image');
-    box4.click(function() {
-        localStorage.setItem('key', '4');
-        select.css('display', 'none');
-        $('.order2_select4').css('display', 'block');
-    });
-
-    var box5 = $('.catalog__item7-image');
-    box5.click(function() {
-        localStorage.setItem('key', '5');
-        select.css('display', 'none');
-        $('.order2_select5').css('display', 'block');
-    });
-
-    var box6 = $('.catalog__item5-button');
-    box6.click(function() {
-        order1Desktop.fadeIn();
-        overlay1Desktop.fadeIn();
-        localStorage.setItem('key', '6');
-        select.css('display', 'none');
-        $('.order2_select6').css('display', 'block');
-    });
-
-    var box7 = $('.catalog__item6-button');
-    box7.click(function() {
-        order1Desktop.fadeIn();
-        overlay1Desktop.fadeIn();
-        localStorage.setItem('key', '7');
-        select.css('display', 'none');
-        $('.order2_select7').css('display', 'block');
-    });
-
-
-    $('.catalog__item5-button-mob').on("click", function() {
-        window.location = 'form.html';
-        localStorage.setItem('key', '6');
-    });
-
-    $('.catalog__item6-button-mob').on("click", function() {
-        window.location = 'form.html';
-        localStorage.setItem('key', '7');
-    });*/
-
     /*Choosing the right equipment
      ===============================*/
 
@@ -490,14 +392,6 @@ $(document).ready(function () {
         window.location = 'form.html';
         localStorage.setItem('key', '' + $('#catalog__title2').html());
     });
-
-
-
-
-
-
-
-
 
 });
 
